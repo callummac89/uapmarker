@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Map.module.css';
+import type { FeatureCollection, Point } from 'geojson';
 
 console.log('Mapbox token:', process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
@@ -25,6 +26,11 @@ type Sighting = {
 type MapProps = {
     shape: string;
     dateRange: string;
+};
+
+type PointGeometry = {
+    type: 'Point';
+    coordinates: [number, number];
 };
 
 const UapMap = ({ shape, dateRange }: MapProps) => {
@@ -72,9 +78,6 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
         coordCountMap.set(key, count + 1);
     });
 
-    // Track how many times each coordinate has been jittered so far
-    const jitterIndexMap = new Map<string, number>();
-
     const getJitteredCoord = (lat: number, lng: number, index: number) => {
         if (index === 0) {
             return { latitude: lat, longitude: lng };
@@ -87,11 +90,23 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
         return { latitude: lat + deltaLat, longitude: lng + deltaLng };
     };
 
+    // Type guard to check if geometry is Point and coordinates are valid
+    const isPointGeometry = (geometry: unknown): geometry is PointGeometry => {
+        return typeof geometry === 'object' && geometry !== null &&
+            (geometry as PointGeometry).type === 'Point' &&
+            Array.isArray((geometry as PointGeometry).coordinates) &&
+            (geometry as PointGeometry).coordinates.length === 2 &&
+            typeof (geometry as PointGeometry).coordinates[0] === 'number' &&
+            typeof (geometry as PointGeometry).coordinates[1] === 'number';
+    };
+
     useEffect(() => {
         if (!mapRef.current) return;
 
+        const jitterIndexMap = new Map<string, number>();
+
         // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied
-        const geojsonSightings = {
+        const geojsonSightings: FeatureCollection<Point> = {
             type: 'FeatureCollection',
             features: filteredSightings.map(sighting => {
                 const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
@@ -203,8 +218,9 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
 
             // Popup on unclustered point click
             map.on('click', 'unclustered-point', (e) => {
-                const feature = e.features && e.features[0] as mapboxgl.MapboxGeoJSONFeature;
-                if (!feature) return;
+                const feature = e.features && e.features[0];
+                if (!feature || !feature.geometry || !isPointGeometry(feature.geometry)) return;
+
                 const props = feature.properties as {
                     id: string;
                     description: string;
@@ -215,6 +231,7 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
                     count: number;
                     imageUrl: string;
                 };
+
                 const formattedDate = new Date(props.date).toLocaleString('en-US', {
                     year: 'numeric',
                     month: 'short',
@@ -239,7 +256,7 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
   </div>
 `;
                 new mapboxgl.Popup()
-                    .setLngLat(feature.geometry.coordinates as [number, number])
+                    .setLngLat(feature.geometry.coordinates)
                     .setHTML(popupHTML)
                     .addTo(map);
             });
@@ -256,20 +273,26 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
             map.on('click', 'clusters', (e) => {
                 const features = map.queryRenderedFeatures(e.point, {
                     layers: ['clusters']
-                }) as mapboxgl.MapboxGeoJSONFeature[];
-                const clusterId = features[0]?.properties?.cluster_id as number | undefined;
-                if (clusterId !== undefined) {
-                    (map.getSource('sightings') as mapboxgl.GeoJSONSource).getClusterExpansionZoom(
-                        clusterId,
-                        (err, zoom) => {
-                            if (err) return;
-                            map.easeTo({
-                                center: features[0].geometry.coordinates as [number, number],
-                                zoom
-                            });
-                        }
-                    );
-                }
+                });
+                if (!features.length) return;
+
+                const clusterIdRaw = features[0]?.properties?.cluster_id;
+                const clusterId = Number(clusterIdRaw);
+                if (!Number.isFinite(clusterId)) return;
+
+                (map.getSource('sightings') as mapboxgl.GeoJSONSource).getClusterExpansionZoom(
+                    clusterId,
+                    (err, zoom) => {
+                        if (err) return;
+                        if (!features[0].geometry || !isPointGeometry(features[0].geometry)) return;
+                        if (typeof zoom !== 'number' || !Number.isFinite(zoom)) return;
+
+                        map.easeTo({
+                            center: features[0].geometry.coordinates,
+                            zoom
+                        });
+                    }
+                );
             });
         });
 

@@ -3,6 +3,13 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from './SightingForm.module.css';
 
+
+type MapboxPlace = {
+    id: string;
+    place_name: string;
+    center: [number, number];
+};
+
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN || '';
 
 export default function SightingForm({ onClose }: { onClose: () => void }) {
@@ -20,7 +27,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
     const [status, setStatus] = useState('');
 
     // For location autocomplete
-    const [citySuggestions, setCitySuggestions] = useState<Array<any>>([]);
+    const [citySuggestions, setCitySuggestions] = useState<MapboxPlace[]>([]);
     const [cityQuery, setCityQuery] = useState('');
     const cityInputRef = useRef<HTMLInputElement>(null);
 
@@ -105,7 +112,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
     return (
         <div
           className={styles.overlay}
-          onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+          onClick={(e: React.MouseEvent<HTMLDivElement>) => { if (e.target === e.currentTarget) onClose(); }}
         >
             <div className={styles.modal}>
                 <button className={styles.closeBtn} onClick={onClose}>×</button>
@@ -127,7 +134,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
                         ref={cityInputRef}
                     />
                     <datalist id="city-suggestions">
-                        {citySuggestions.map((feature: any) => (
+                        {citySuggestions.map((feature) => (
                             <option key={feature.id} value={feature.place_name}>
                                 {feature.place_name}
                             </option>

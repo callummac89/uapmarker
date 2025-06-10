@@ -4,27 +4,35 @@ import { PrismaClient, Shape } from '@prisma/client';
 const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
-    const data = await req.json();
-    const {
-        date,
-        city,
-        latitude,
-        longitude,
-        noise,
-        shape,
-        count,
-        description,
-        imageUrl,
-    } = data;
-
-    if (
-        !date || !city || latitude == null || longitude == null ||
-        !noise || !shape || count == null || !description
-    ) {
-        return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
-    }
-
     try {
+        const data = await req.json();
+        console.log("📥 Received submission:", data);
+
+        const {
+            date,
+            city,
+            latitude,
+            longitude,
+            noise,
+            shape,
+            count,
+            description,
+            imageUrl,
+        } = data;
+
+        // Validate presence and types of all fields
+        if (
+            !date || !city || !noise || !shape || !description ||
+            typeof latitude !== 'number' ||
+            typeof longitude !== 'number' ||
+            typeof count !== 'number'
+        ) {
+            console.error("❌ Missing or invalid fields", {
+                date, city, noise, shape, description, latitude, longitude, count
+            });
+            return new Response(JSON.stringify({ error: 'Missing or invalid fields' }), { status: 400 });
+        }
+
         const sighting = await prisma.sighting.create({
             data: {
                 date: new Date(date),
@@ -44,6 +52,7 @@ export async function POST(req: Request) {
             headers: { 'Content-Type': 'application/json' },
         });
     } catch (error) {
+        console.error("🔥 Submission error:", error);
         return new Response(JSON.stringify({ error: 'Failed to save sighting', details: error }), {
             status: 500,
         });

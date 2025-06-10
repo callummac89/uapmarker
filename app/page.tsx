@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Head from 'next/head';
 import Map from '../components/Map';
 import SightingForm from '../components/SightingForm';
 import styles from '../styles/Home.module.css';
@@ -12,6 +13,9 @@ export default function Home() {
 
     return (
         <div className={styles.fullPage}>
+            <Head>
+                <title>UAP Marker</title>
+            </Head>
             <header className={styles.header}>
                 <h1 className={styles.logo}>UAP MARKER</h1>
                 <nav>

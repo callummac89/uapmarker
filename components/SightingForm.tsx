@@ -94,9 +94,9 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 ...form,
-                latitude: parseFloat(form.latitude),
-                longitude: parseFloat(form.longitude),
-                count: parseInt(form.count as any),
+                latitude: parseFloat(form.latitude.toString()),
+                longitude: parseFloat(form.longitude.toString()),
+                count: typeof form.count === 'string' ? parseInt(form.count, 10) : form.count,
             }),
         });
 

@@ -62,14 +62,13 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
 
     // Apply jitter to sightings with identical lat/lng to avoid overlap
     const coordCountMap = new Map<string, number>();
-    const jitteredCoordinates = new Map<string, {latitude: number, longitude: number}>();
 
     // Parameters for jittering (in degrees)
     const jitterRadius = 0.0001; // about 11 meters
 
     filteredSightings.forEach((sighting) => {
         const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
-        let count = coordCountMap.get(key) ?? 0;
+        const count = coordCountMap.get(key) ?? 0;
         coordCountMap.set(key, count + 1);
     });
 
@@ -88,37 +87,37 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
         return { latitude: lat + deltaLat, longitude: lng + deltaLng };
     };
 
-    // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied
-    const geojsonSightings = {
-        type: 'FeatureCollection',
-        features: filteredSightings.map(sighting => {
-            const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
-            const currentIndex = jitterIndexMap.get(key) ?? 0;
-            jitterIndexMap.set(key, currentIndex + 1);
-            const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
-
-            return {
-                type: 'Feature',
-                geometry: {
-                    type: 'Point',
-                    coordinates: [longitude, latitude]
-                },
-                properties: {
-                    id: sighting.id,
-                    description: sighting.description,
-                    city: sighting.city,
-                    shape: sighting.shape,
-                    date: sighting.date,
-                    noise: sighting.noise,
-                    count: sighting.count,
-                    imageUrl: sighting.imageUrl
-                }
-            };
-        })
-    };
-
     useEffect(() => {
         if (!mapRef.current) return;
+
+        // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied
+        const geojsonSightings = {
+            type: 'FeatureCollection',
+            features: filteredSightings.map(sighting => {
+                const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
+                const currentIndex = jitterIndexMap.get(key) ?? 0;
+                jitterIndexMap.set(key, currentIndex + 1);
+                const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
+
+                return {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [longitude, latitude]
+                    },
+                    properties: {
+                        id: sighting.id,
+                        description: sighting.description,
+                        city: sighting.city,
+                        shape: sighting.shape,
+                        date: sighting.date,
+                        noise: sighting.noise,
+                        count: sighting.count,
+                        imageUrl: sighting.imageUrl
+                    }
+                };
+            })
+        };
 
         const map = new mapboxgl.Map({
             container: mapRef.current,
@@ -204,9 +203,18 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
 
             // Popup on unclustered point click
             map.on('click', 'unclustered-point', (e) => {
-                const feature = e.features && e.features[0];
+                const feature = e.features && e.features[0] as mapboxgl.MapboxGeoJSONFeature;
                 if (!feature) return;
-                const props = feature.properties!;
+                const props = feature.properties as {
+                    id: string;
+                    description: string;
+                    city: string;
+                    shape: string;
+                    date: string;
+                    noise: string;
+                    count: number;
+                    imageUrl: string;
+                };
                 const formattedDate = new Date(props.date).toLocaleString('en-US', {
                     year: 'numeric',
                     month: 'short',
@@ -231,7 +239,7 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
   </div>
 `;
                 new mapboxgl.Popup()
-                    .setLngLat((feature.geometry as any).coordinates)
+                    .setLngLat(feature.geometry.coordinates as [number, number])
                     .setHTML(popupHTML)
                     .addTo(map);
             });
@@ -248,15 +256,15 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
             map.on('click', 'clusters', (e) => {
                 const features = map.queryRenderedFeatures(e.point, {
                     layers: ['clusters']
-                });
-                const clusterId = features[0]?.properties?.cluster_id;
-                if (clusterId) {
+                }) as mapboxgl.MapboxGeoJSONFeature[];
+                const clusterId = features[0]?.properties?.cluster_id as number | undefined;
+                if (clusterId !== undefined) {
                     (map.getSource('sightings') as mapboxgl.GeoJSONSource).getClusterExpansionZoom(
                         clusterId,
                         (err, zoom) => {
                             if (err) return;
                             map.easeTo({
-                                center: (features[0].geometry as any).coordinates,
+                                center: features[0].geometry.coordinates as [number, number],
                                 zoom
                             });
                         }
@@ -266,7 +274,7 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
         });
 
         return () => map.remove();
-    }, [geojsonSightings]);
+    }, [filteredSightings]);
 
     return <div ref={mapRef} className={styles.mapContainer} />;
 };

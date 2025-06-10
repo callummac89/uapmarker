@@ -48,7 +48,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
                 if (!ignore) {
                     setCitySuggestions(data.features || []);
                 }
-            } catch (err) {
+            } catch {
                 setCitySuggestions([]);
             }
         };

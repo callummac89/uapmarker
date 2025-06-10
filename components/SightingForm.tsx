@@ -83,7 +83,9 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [form.location]);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (
+        e: React.ChangeEvent<HTMLFormElement>
+    ) => {
         e.preventDefault();
         setStatus('Submitting...');
 
@@ -134,7 +136,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
                         ref={cityInputRef}
                     />
                     <datalist id="city-suggestions">
-                        {citySuggestions.map((feature) => (
+                        {citySuggestions.map((feature: MapboxPlace) => (
                             <option key={feature.id} value={feature.place_name}>
                                 {feature.place_name}
                             </option>

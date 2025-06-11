@@ -93,7 +93,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             const startUTC = startDate ? startDate.getTime() : null;
             const withinDate = !startUTC || sightingUTC >= startUTC;
             // Normalize shape and ensure default is 'all'
-            const normalizedShape = shape?.toLowerCase() || 'all';
+            const normalizedShape = (shape ?? 'all').toLowerCase();
             const shapeMatch = normalizedShape === 'all' || sighting.shape.toLowerCase() === normalizedShape;
 
             const include = withinDate && shapeMatch;

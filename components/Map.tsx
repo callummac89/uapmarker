@@ -57,12 +57,15 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const filteredSightings = useMemo(() => {
         if (!sightings.length) return [];
         const now = new Date();
-        console.log('Current dateRange:', dateRange);
+        // Normalize dateRange and shape
+        const normalizedShape = (!shape || shape.trim() === '' || shape.toLowerCase() === 'all') ? 'all' : shape.toLowerCase();
+        const normalizedDateRange = (!dateRange || dateRange.trim() === '' || dateRange.toLowerCase() === 'all') ? 'all' : dateRange;
         let startDate: Date | null = null;
 
+        console.log('Current dateRange:', dateRange);
         console.log('All sightings before filter:', sightings.map(s => s.date));
 
-        switch (dateRange) {
+        switch (normalizedDateRange) {
             case '24h':
                 startDate = new Date(now.getTime() - 24 * 60 * 60 * 1000);
                 break;
@@ -75,8 +78,6 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             case '365d':
                 startDate = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000);
                 break;
-            case '':
-            case 'all':
             default:
                 startDate = null;
         }
@@ -85,8 +86,6 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         console.log('All sightings:', sightings);
         console.log('Date range:', dateRange);
 
-        // Normalize shape and ensure default is 'all'
-        const normalizedShape = (!shape || shape.trim() === '' || shape.toLowerCase() === 'all') ? 'all' : shape.toLowerCase();
         const filtered = sightings.filter(sighting => {
             const sightingDate = new Date(sighting.date);
             const sightingUTC = sightingDate.getTime();

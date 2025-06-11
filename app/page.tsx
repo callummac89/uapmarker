@@ -22,6 +22,9 @@ export default function Home() {
     }, [shape, dateRange]);
 
     useEffect(() => {
+        // Ensure default values are applied to shape and dateRange on mount
+        setShape(prev => prev && prev !== '' ? prev : 'all');
+        setDateRange(prev => prev && prev !== '' ? prev : 'all');
         const timer = setTimeout(() => setLoading(false), 1500);
         fetch('/api/sightings')
             .then(res => res.json())
@@ -32,8 +35,8 @@ export default function Home() {
 
     useEffect(() => {
         // Force a state update to ensure filters apply correctly on initial load
-        if (shape === '' || shape === undefined) setShape('all');
-        if (dateRange === '' || dateRange === undefined) setDateRange('all');
+        setShape(prev => prev && prev !== '' ? prev : 'all');
+        setDateRange(prev => prev && prev !== '' ? prev : 'all');
     }, []);
 
     if (loading) return <LoadingScreen />;

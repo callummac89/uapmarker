@@ -48,31 +48,35 @@ export default function Home() {
             <Map shape={shape} dateRange={dateRange} showAirports={showAirports} />
 
             <footer className={styles.footer}>
-                <select value={shape} onChange={(e) => setShape(e.target.value)} className={styles.filter}>
-                    <option value="">All Shapes</option>
-                    <option value="Light">Light</option>
-                    <option value="Sphere">Sphere</option>
-                    <option value="Triangle">Triangle</option>
-                    <option value="Orb">Orb</option>
-                    <option value="Cigar">Cigar</option>
-                    <option value="Other">Other</option>
-                </select>
+                <div className={styles.footerRow}>
+                    <select value={shape} onChange={(e) => setShape(e.target.value)} className={styles.filter}>
+                        <option value="">All Shapes</option>
+                        <option value="Light">Light</option>
+                        <option value="Sphere">Sphere</option>
+                        <option value="Triangle">Triangle</option>
+                        <option value="Orb">Orb</option>
+                        <option value="Cigar">Cigar</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-                <select value={dateRange} onChange={(e) => setDateRange(e.target.value)} className={styles.filter}>
-                    <option value="">All Dates</option>
-                    <option value="24h">Last 24 Hours</option>
-                    <option value="7d">Last 7 Days</option>
-                    <option value="30d">Last 30 Days</option>
-                    <option value="365d">Last Year</option>
-                </select>
+                    <select value={dateRange} onChange={(e) => setDateRange(e.target.value)} className={styles.filter}>
+                        <option value="">All Dates</option>
+                        <option value="24h">Last 24 Hours</option>
+                        <option value="7d">Last 7 Days</option>
+                        <option value="30d">Last 30 Days</option>
+                        <option value="365d">Last Year</option>
+                    </select>
+                </div>
 
-                <div className={styles.toggleWrapper}>
-                    <span className={styles.toggleText}>Show Airports</span>
-                    <div
-                        className={`${styles.toggle} ${showAirports ? styles.active : ''}`}
-                        onClick={() => setShowAirports(!showAirports)}
-                    >
-                        <div className={styles.toggleThumb} />
+                <div className={styles.footerToggles}>
+                    <div className={styles.toggleWrapper}>
+                        <span className={styles.toggleText}>Show Airports</span>
+                        <div
+                            className={`${styles.toggle} ${showAirports ? styles.active : ''}`}
+                            onClick={() => setShowAirports(!showAirports)}
+                        >
+                            <div className={styles.toggleThumb} />
+                        </div>
                     </div>
                 </div>
             </footer>

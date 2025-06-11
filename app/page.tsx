@@ -13,6 +13,7 @@ export default function Home() {
     const [shape, setShape] = useState('');
     const [dateRange, setDateRange] = useState('');
     const [totalSightings, setTotalSightings] = useState<number | null>(null);
+    const [showAirports, setShowAirports] = useState(false);
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 1500);
@@ -44,7 +45,7 @@ export default function Home() {
 
             {showForm && <SightingForm onClose={() => setShowForm(false)} />}
 
-            <Map shape={shape} dateRange={dateRange} />
+            <Map shape={shape} dateRange={dateRange} showAirports={showAirports} />
 
             <footer className={styles.footer}>
                 <select value={shape} onChange={(e) => setShape(e.target.value)} className={styles.filter}>
@@ -64,6 +65,16 @@ export default function Home() {
                     <option value="30d">Last 30 Days</option>
                     <option value="365d">Last Year</option>
                 </select>
+
+                <div className={styles.toggleWrapper}>
+                    <span className={styles.toggleText}>Show Airports</span>
+                    <div
+                        className={`${styles.toggle} ${showAirports ? styles.active : ''}`}
+                        onClick={() => setShowAirports(!showAirports)}
+                    >
+                        <div className={styles.toggleThumb} />
+                    </div>
+                </div>
             </footer>
         </div>
     );

@@ -26,6 +26,7 @@ type Sighting = {
 type MapProps = {
     shape: string;
     dateRange: string;
+    showAirports: boolean;
 };
 
 type PointGeometry = {
@@ -33,9 +34,10 @@ type PointGeometry = {
     coordinates: [number, number];
 };
 
-const UapMap = ({ shape, dateRange }: MapProps) => {
+const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
     const mapRef = useRef<HTMLDivElement>(null);
     const [sightings, setSightings] = useState<Sighting[]>([]);
+    const [visibleAirports, setVisibleAirports] = useState<any>([]);
 
     useEffect(() => {
         fetch('/api/sightings')
@@ -139,6 +141,7 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
             style: 'mapbox://styles/mapbox/dark-v10',
             center: [-98.47, 38.66],
             zoom: 4,
+            projection: 'globe',
         });
 
         navigator.geolocation.getCurrentPosition(
@@ -152,7 +155,16 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
             }
         );
 
+        // Declare cleanupUpdateAirports to avoid runtime error if not defined
+        let cleanupUpdateAirports = () => {};
         map.on('load', () => {
+            // Set globe fog for space-like background
+            map.setFog({
+                color: 'black',
+                'high-color': 'black',
+                'space-color': '#0b0b0b',
+                'star-intensity': 0.45
+            });
             // Add clustered GeoJSON source
             map.addSource('sightings', {
                 type: 'geojson',
@@ -294,10 +306,59 @@ const UapMap = ({ shape, dateRange }: MapProps) => {
                     }
                 );
             });
+            // Show airports if enabled
+            let cleanupUpdateAirports = () => {};
+            if (showAirports) {
+                const updateAirports = async () => {
+                    const bounds = map.getBounds();
+                    const res = await fetch('/airports.geojson');
+                    const airportsData = await res.json();
+
+                    const featuresInBounds = (airportsData.features as any[]).filter((feature) => {
+                        const [lon, lat] = feature.geometry.coordinates;
+                        return bounds.contains([lon, lat]);
+                    });
+
+                    const visibleData = {
+                        type: 'FeatureCollection',
+                        features: featuresInBounds,
+                    };
+
+                    if (map.getSource('airports')) {
+                        (map.getSource('airports') as mapboxgl.GeoJSONSource).setData(visibleData);
+                    } else {
+                        map.addSource('airports', {
+                            type: 'geojson',
+                            data: visibleData,
+                        });
+
+                        map.addLayer({
+                            id: 'airport-points',
+                            type: 'circle',
+                            source: 'airports',
+                            paint: {
+                                'circle-radius': 4,
+                                'circle-color': '#3399ff',
+                                'circle-stroke-width': 1,
+                                'circle-stroke-color': '#fff',
+                            }
+                        });
+                    }
+                };
+
+                updateAirports();
+                map.on('moveend', updateAirports);
+                cleanupUpdateAirports = () => map.off('moveend', updateAirports);
+            }
         });
 
-        return () => map.remove();
-    }, [filteredSightings]);
+        return () => {
+            cleanupUpdateAirports();
+            if (map.getLayer('airport-points')) map.removeLayer('airport-points');
+            if (map.getSource('airports')) map.removeSource('airports');
+            map.remove();
+        };
+    }, [JSON.stringify(filteredSightings), showAirports]);
 
     return <div ref={mapRef} className={styles.mapContainer} />;
 };

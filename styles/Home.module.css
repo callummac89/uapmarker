@@ -103,3 +103,43 @@
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
 }
+
+.toggleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.toggleText {
+    font-size: 14px;
+    color: #fff;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background: #555;
+    border-radius: 10px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle.active {
+    background: #33cc33;
+}
+
+.toggleThumb {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+.toggle.active .toggleThumb {
+    transform: translateX(20px);
+}

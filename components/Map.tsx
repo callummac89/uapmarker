@@ -400,7 +400,17 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     // Update sightings data source when filteredSightings change
     useEffect(() => {
         const map = mapInstanceRef.current;
-        if (!map) return;
+        if (!map || !map.isStyleLoaded()) {
+            console.warn('Map not ready to receive sightings data');
+            return;
+        }
+
+        const source = map.getSource('sightings');
+        if (!source) {
+            console.warn('Sightings source not yet available');
+            return;
+        }
+
         const jitterIndexMap = new Map<string, number>();
         const geojsonSightings: FeatureCollection<Point> = {
             type: 'FeatureCollection',
@@ -428,9 +438,8 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                 };
             })
         };
-        if (map.getSource('sightings')) {
-            (map.getSource('sightings') as mapboxgl.GeoJSONSource).setData(geojsonSightings);
-        }
+
+        (source as mapboxgl.GeoJSONSource).setData(geojsonSightings);
     }, [filteredSightings]);
 
     // Show/hide airports on toggle

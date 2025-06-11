@@ -103,7 +103,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
 
         if (res.ok) {
             setStatus('Sighting submitted ✅');
-            setForm({ date: '', city: '', latitude: '', longitude: '', noise: '', shape: 'Orb', count: 1, description: '', imageUrl: '' });
+            setForm({ date: '', location: '', latitude: '', longitude: '', noise: '', shape: 'Orb', count: 1, description: '', imageUrl: '' });
             // Ping to warm cache and reload to update map
             await fetch('/api/sightings'); // Ping to warm cache
             window.location.reload();      // Reload to update map

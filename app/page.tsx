@@ -1,15 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Map from '../components/Map';
 import SightingForm from '../components/SightingForm';
+import LoadingScreen from '../components/LoadingScreen';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+    const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
     const [shape, setShape] = useState('');
     const [dateRange, setDateRange] = useState('');
+    const [totalSightings, setTotalSightings] = useState<number | null>(null);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 1500);
+        fetch('/api/sightings')
+            .then(res => res.json())
+            .then(data => setTotalSightings(data.length))
+            .catch(err => console.error('Failed to fetch sightings count', err));
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) return <LoadingScreen />;
 
     return (
         <div className={styles.fullPage}>
@@ -18,6 +32,9 @@ export default function Home() {
             </Head>
             <header className={styles.header}>
                 <h1 className={styles.logo}>UAP MARKER</h1>
+                {totalSightings !== null && (
+                    <span className={styles.count}>{totalSightings} Sightings</span>
+                )}
                 <nav>
                     <button className={styles.navButton} onClick={() => setShowForm(!showForm)}>
                         {showForm ? 'Close' : '+ Add Sighting'}

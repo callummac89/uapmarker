@@ -94,6 +94,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 ...form,
+                city: form.location,
                 latitude: parseFloat(form.latitude.toString()),
                 longitude: parseFloat(form.longitude.toString()),
                 count: typeof form.count === 'string' ? parseInt(form.count, 10) : form.count,
@@ -102,7 +103,7 @@ export default function SightingForm({ onClose }: { onClose: () => void }) {
 
         if (res.ok) {
             setStatus('Sighting submitted ✅');
-            setForm({ date: '', location: '', latitude: '', longitude: '', noise: '', shape: 'Orb', count: 1, description: '', imageUrl: '' });
+            setForm({ date: '', city: '', latitude: '', longitude: '', noise: '', shape: 'Orb', count: 1, description: '', imageUrl: '' });
             // Ping to warm cache and reload to update map
             await fetch('/api/sightings'); // Ping to warm cache
             window.location.reload();      // Reload to update map

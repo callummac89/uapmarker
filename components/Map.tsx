@@ -155,34 +155,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         // Only create the map once
         if (mapInstanceRef.current) return;
 
-        const jitterIndexMap = new Map<string, number>();
-        // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied (use initial sightings here)
-        const geojsonSightings: FeatureCollection<Point> = {
-            type: 'FeatureCollection',
-            features: filteredSightings.map(sighting => {
-                const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
-                const currentIndex = jitterIndexMap.get(key) ?? 0;
-                jitterIndexMap.set(key, currentIndex + 1);
-                const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
-                return {
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
-                        coordinates: [longitude, latitude]
-                    },
-                    properties: {
-                        id: sighting.id,
-                        description: sighting.description,
-                        city: sighting.city,
-                        shape: sighting.shape,
-                        date: sighting.date,
-                        noise: sighting.noise,
-                        count: sighting.count,
-                        imageUrl: sighting.imageUrl
-                    }
-                };
-            })
-        };
+        // Add the sightings source with an empty FeatureCollection; data will be set by later effect
 
         const map = new mapboxgl.Map({
             container: mapRef.current,
@@ -221,7 +194,10 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             // Add clustered GeoJSON source
             map.addSource('sightings', {
                 type: 'geojson',
-                data: geojsonSightings,
+                data: {
+                    type: 'FeatureCollection',
+                    features: []
+                },
                 cluster: true,
                 clusterMaxZoom: 14,
                 clusterRadius: 50

@@ -11,9 +11,14 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
     const [shape, setShape] = useState('');
-    const [dateRange, setDateRange] = useState('');
+    const [dateRange, setDateRange] = useState('all');
     const [totalSightings, setTotalSightings] = useState<number | null>(null);
     const [showAirports, setShowAirports] = useState(false);
+    const [showHeatmap, setShowHeatmap] = useState(false);
+
+    useEffect(() => {
+        console.log('Current dateRange:', dateRange);
+    }, [dateRange]);
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 1500);
@@ -45,7 +50,7 @@ export default function Home() {
 
             {showForm && <SightingForm onClose={() => setShowForm(false)} />}
 
-            <Map shape={shape} dateRange={dateRange} showAirports={showAirports} />
+            <Map shape={shape} dateRange={dateRange} showAirports={showAirports} showHeatmap={showHeatmap} />
 
             <footer className={styles.footer}>
                 <div className={styles.footerRow}>
@@ -60,7 +65,7 @@ export default function Home() {
                     </select>
 
                     <select value={dateRange} onChange={(e) => setDateRange(e.target.value)} className={styles.filter}>
-                        <option value="">All Dates</option>
+                        <option value="all">All Dates</option>
                         <option value="24h">Last 24 Hours</option>
                         <option value="7d">Last 7 Days</option>
                         <option value="30d">Last 30 Days</option>
@@ -74,6 +79,15 @@ export default function Home() {
                         <div
                             className={`${styles.toggle} ${showAirports ? styles.active : ''}`}
                             onClick={() => setShowAirports(!showAirports)}
+                        >
+                            <div className={styles.toggleThumb} />
+                        </div>
+                    </div>
+                    <div className={styles.toggleWrapper}>
+                        <span className={styles.toggleText}>Show Heatmap</span>
+                        <div
+                            className={`${styles.toggle} ${showHeatmap ? styles.active : ''}`}
+                            onClick={() => setShowHeatmap(!showHeatmap)}
                         >
                             <div className={styles.toggleThumb} />
                         </div>

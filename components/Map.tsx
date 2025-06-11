@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useMemo } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Map.module.css';
@@ -27,6 +27,7 @@ type MapProps = {
     shape: string;
     dateRange: string;
     showAirports: boolean;
+    showHeatmap: boolean;
 };
 
 type PointGeometry = {
@@ -34,38 +35,76 @@ type PointGeometry = {
     coordinates: [number, number];
 };
 
-const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
+const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const mapRef = useRef<HTMLDivElement>(null);
     const [sightings, setSightings] = useState<Sighting[]>([]);
 
     useEffect(() => {
         fetch('/api/sightings')
             .then(res => res.json())
-            .then(data => setSightings(data))
+            .then(data => {
+                console.log('Fetched sightings:', data);
+                setSightings(data);
+            })
             .catch(err => console.error('Failed to fetch sightings:', err));
     }, []);
 
-    const filteredSightings = (!shape && !dateRange)
-        ? sightings
-        : sightings.filter(sighting => {
-            const sightingDate = new Date(sighting.date);
-            const now = new Date();
+    const filteredSightings = useMemo(() => {
+        const now = new Date();
+        console.log('Current dateRange:', dateRange);
+        let startDate: Date | null = null;
 
-            let dateMatch = true;
-            if (dateRange === '24h') {
-                dateMatch = sightingDate >= new Date(now.getTime() - 24 * 60 * 60 * 1000);
-            } else if (dateRange === '7d') {
-                dateMatch = sightingDate >= new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-            } else if (dateRange === '30d') {
-                dateMatch = sightingDate >= new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-            } else if (dateRange === '365d') {
-                dateMatch = sightingDate >= new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000);
+        console.log('All sightings before filter:', sightings.map(s => s.date));
+
+        switch (dateRange) {
+            case '24h':
+                startDate = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+                break;
+            case '7d':
+                startDate = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+                break;
+            case '30d':
+                startDate = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+                break;
+            case '365d':
+                startDate = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000);
+                break;
+            case '':
+            case 'all':
+            default:
+                startDate = null;
+        }
+
+        console.log('Start date (UTC):', startDate?.toISOString());
+        console.log('All sightings:', sightings);
+        console.log('Date range:', dateRange);
+
+        const filtered = sightings.filter(sighting => {
+            const sightingDate = new Date(sighting.date);
+            const sightingUTC = sightingDate.getTime();
+            console.log('Sighting raw date:', sighting.date, 'Parsed:', sightingDate, 'UTC:', sightingUTC);
+
+            const startUTC = startDate ? startDate.getTime() : null;
+            const withinDate = !startUTC || sightingUTC >= startUTC;
+            const shapeMatch = !shape || shape === 'all' || sighting.shape.toLowerCase() === shape.toLowerCase();
+
+            const include = withinDate && shapeMatch;
+            if (!include) {
+                console.log('[Filtered out]', {
+                    sighting: sighting.date,
+                    shape: sighting.shape,
+                    withinDate,
+                    shapeMatch,
+                });
             }
 
-            const shapeMatch = shape === 'all' || sighting.shape.toLowerCase() === shape.toLowerCase();
-
-            return dateMatch && shapeMatch;
+            return include;
         });
+
+        console.log('Filtered sightings:', filtered.length);
+
+        return filtered;
+    }, [sightings, shape, dateRange]);
 
     // Apply jitter to sightings with identical lat/lng to avoid overlap
     const coordCountMap = new Map<string, number>();
@@ -221,11 +260,59 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
                 filter: ['!', ['has', 'point_count']],
                 paint: {
                     'circle-color': '#00ffc3',
-                    'circle-radius': 8,
+                    'circle-radius': 6,
                     'circle-stroke-width': 1,
-                    'circle-stroke-color': '#fff'
+                    'circle-stroke-color': '#fff',
                 }
             });
+
+            // Add heatmap layer after unclustered-point layer
+            map.addLayer({
+                id: 'sightings-heat',
+                type: 'heatmap',
+                source: 'sightings',
+                maxzoom: 15,
+                layout: {
+                    visibility: showHeatmap ? 'visible' : 'none',
+                },
+                paint: {
+                    'heatmap-weight': [
+                        'interpolate',
+                        ['linear'],
+                        ['get', 'count'],
+                        1, 0,
+                        10, 1
+                    ],
+                    'heatmap-intensity': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        0, 1,
+                        15, 3
+                    ],
+                    'heatmap-color': [
+                        'interpolate',
+                        ['linear'],
+                        ['heatmap-density'],
+                        0, 'rgba(0, 0, 255, 0)',
+                        0.2, 'royalblue',
+                        0.4, 'cyan',
+                        0.6, 'lime',
+                        0.8, 'yellow',
+                        1, 'red'
+                    ],
+                    'heatmap-radius': [
+                        'interpolate',
+                        ['linear'],
+                        ['zoom'],
+                        0, 2,
+                        9, 20
+                    ],
+                    'heatmap-opacity': 0.6
+                }
+            });
+            // After layers are added, set heatmap visibility
+            map.setLayoutProperty('sightings-heat', 'visibility', showHeatmap ? 'visible' : 'none');
 
             // Popup on unclustered point click
             map.on('click', 'unclustered-point', (e) => {
@@ -308,6 +395,48 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
             // Show airports if enabled
             if (showAirports) {
                 const updateAirports = async () => {
+                    // Show zoom-in message if zoomed out too far
+                    const messageId = 'zoom-in-message';
+                    if (map.getZoom() < 5) {
+                        // Insert floating message if not already present
+                        if (!document.getElementById(messageId)) {
+                            const msg = document.createElement('div');
+                            msg.id = messageId;
+                            msg.textContent = 'Zoom in to view airports';
+                            Object.assign(msg.style, {
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%)',
+                                backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                                color: 'white',
+                                padding: '10px 20px',
+                                borderRadius: '8px',
+                                fontSize: '15px',
+                                zIndex: '999',
+                                transition: 'opacity 0.5s ease-in-out',
+                                opacity: '1',
+                                backdropFilter: 'blur(6px)',
+                                WebkitBackdropFilter: 'blur(6px)'
+                            });
+                            map.getContainer().appendChild(msg);
+                            setTimeout(() => {
+                                msg.style.opacity = '0';
+                                setTimeout(() => {
+                                    msg.remove();
+                                }, 500);
+                            }, 2500);
+                        }
+                        // Too zoomed out — clear airports
+                        if (map.getSource('airports')) {
+                            (map.getSource('airports') as mapboxgl.GeoJSONSource).setData({
+                                type: 'FeatureCollection',
+                                features: []
+                            });
+                        }
+                        return;
+                    }
+
                     const bounds = map.getBounds();
                     if (!bounds) return;
 
@@ -355,11 +484,12 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
 
         return () => {
             cleanupUpdateAirports();
+            if (map.getLayer('sightings-heat')) map.removeLayer('sightings-heat');
             if (map.getLayer('airport-points')) map.removeLayer('airport-points');
             if (map.getSource('airports')) map.removeSource('airports');
             map.remove();
         };
-    }, [JSON.stringify(filteredSightings), showAirports]);
+    }, [filteredSightings, showAirports, showHeatmap]);
 
     return <div ref={mapRef} className={styles.mapContainer} />;
 };

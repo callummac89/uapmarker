@@ -10,15 +10,16 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
-    const [shape, setShape] = useState('');
+    const [shape, setShape] = useState('all');
     const [dateRange, setDateRange] = useState('all');
     const [totalSightings, setTotalSightings] = useState<number | null>(null);
     const [showAirports, setShowAirports] = useState(false);
     const [showHeatmap, setShowHeatmap] = useState(false);
 
     useEffect(() => {
+        console.log('Current shape:', shape);
         console.log('Current dateRange:', dateRange);
-    }, [dateRange]);
+    }, [shape, dateRange]);
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 1500);
@@ -55,7 +56,7 @@ export default function Home() {
             <footer className={styles.footer}>
                 <div className={styles.footerRow}>
                     <select value={shape} onChange={(e) => setShape(e.target.value)} className={styles.filter}>
-                        <option value="">All Shapes</option>
+                        <option value="all">All Shapes</option>
                         <option value="Light">Light</option>
                         <option value="Sphere">Sphere</option>
                         <option value="Triangle">Triangle</option>

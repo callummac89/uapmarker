@@ -157,3 +157,23 @@
 .toggle.active .toggleThumb {
     transform: translateX(20px);
 }
+
+@media (min-width: 769px) {
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerRow {
+        display: flex;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footerToggles {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

@@ -85,15 +85,13 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         console.log('All sightings:', sightings);
         console.log('Date range:', dateRange);
 
+        // Normalize shape and ensure default is 'all'
+        const normalizedShape = (shape && shape.trim().toLowerCase()) || 'all';
         const filtered = sightings.filter(sighting => {
             const sightingDate = new Date(sighting.date);
             const sightingUTC = sightingDate.getTime();
-            console.log('Sighting raw date:', sighting.date, 'Parsed:', sightingDate, 'UTC:', sightingUTC);
-
             const startUTC = startDate ? startDate.getTime() : null;
             const withinDate = !startUTC || sightingUTC >= startUTC;
-            // Normalize shape and ensure default is 'all'
-            const normalizedShape = (shape ?? 'all').toLowerCase();
             const shapeMatch = normalizedShape === 'all' || sighting.shape.toLowerCase() === normalizedShape;
 
             const include = withinDate && shapeMatch;

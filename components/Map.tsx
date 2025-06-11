@@ -38,6 +38,11 @@ type PointGeometry = {
 const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const mapRef = useRef<HTMLDivElement>(null);
     const [sightings, setSightings] = useState<Sighting[]>([]);
+    // Persist initial center/zoom across re-renders
+    const initialCenterRef = useRef<[number, number]>([-98.47, 38.66]);
+    const initialZoomRef = useRef<number>(4);
+    // Store the map instance for later access in effects
+    const mapInstanceRef = useRef<mapboxgl.Map | null>(null);
 
     useEffect(() => {
         fetch('/api/sightings')
@@ -140,12 +145,14 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             typeof (geometry as PointGeometry).coordinates[1] === 'number';
     };
 
+    // Only create the map instance on mount
     useEffect(() => {
         if (!mapRef.current) return;
+        // Only create the map once
+        if (mapInstanceRef.current) return;
 
         const jitterIndexMap = new Map<string, number>();
-
-        // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied
+        // Convert filteredSightings to GeoJSON FeatureCollection with jitter applied (use initial sightings here)
         const geojsonSightings: FeatureCollection<Point> = {
             type: 'FeatureCollection',
             features: filteredSightings.map(sighting => {
@@ -153,7 +160,6 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                 const currentIndex = jitterIndexMap.get(key) ?? 0;
                 jitterIndexMap.set(key, currentIndex + 1);
                 const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
-
                 return {
                     type: 'Feature',
                     geometry: {
@@ -177,10 +183,15 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         const map = new mapboxgl.Map({
             container: mapRef.current,
             style: 'mapbox://styles/mapbox/dark-v10',
-            center: [-98.47, 38.66],
-            zoom: 4,
+            center: initialCenterRef.current,
+            zoom: initialZoomRef.current,
             projection: 'globe',
         });
+        mapInstanceRef.current = map;
+
+        // Set center and zoom from refs (persisted)
+        map.setCenter(initialCenterRef.current);
+        map.setZoom(initialZoomRef.current);
 
         navigator.geolocation.getCurrentPosition(
             position => {
@@ -392,104 +403,163 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                     }
                 );
             });
-            // Show airports if enabled
-            if (showAirports) {
-                const updateAirports = async () => {
-                    // Show zoom-in message if zoomed out too far
-                    const messageId = 'zoom-in-message';
-                    if (map.getZoom() < 5) {
-                        // Insert floating message if not already present
-                        if (!document.getElementById(messageId)) {
-                            const msg = document.createElement('div');
-                            msg.id = messageId;
-                            msg.textContent = 'Zoom in to view airports';
-                            Object.assign(msg.style, {
-                                position: 'absolute',
-                                top: '50%',
-                                left: '50%',
-                                transform: 'translate(-50%, -50%)',
-                                backgroundColor: 'rgba(0, 0, 0, 0.75)',
-                                color: 'white',
-                                padding: '10px 20px',
-                                borderRadius: '8px',
-                                fontSize: '15px',
-                                zIndex: '999',
-                                transition: 'opacity 0.5s ease-in-out',
-                                opacity: '1',
-                                backdropFilter: 'blur(6px)',
-                                WebkitBackdropFilter: 'blur(6px)'
-                            });
-                            map.getContainer().appendChild(msg);
-                            setTimeout(() => {
-                                msg.style.opacity = '0';
-                                setTimeout(() => {
-                                    msg.remove();
-                                }, 500);
-                            }, 2500);
-                        }
-                        // Too zoomed out — clear airports
-                        if (map.getSource('airports')) {
-                            (map.getSource('airports') as mapboxgl.GeoJSONSource).setData({
-                                type: 'FeatureCollection',
-                                features: []
-                            });
-                        }
-                        return;
-                    }
-
-                    const bounds = map.getBounds();
-                    if (!bounds) return;
-
-                    const res = await fetch('/airports.geojson');
-                    const airportsData = await res.json();
-
-                    const featuresInBounds = (airportsData.features as Feature<Point>[]).filter((feature) => {
-                        const [lon, lat] = feature.geometry.coordinates;
-                        return bounds.contains([lon, lat]);
-                    });
-
-                    const visibleData: FeatureCollection<Point> = {
-                        type: 'FeatureCollection',
-                        features: featuresInBounds,
-                    };
-
-                    if (map.getSource('airports')) {
-                        (map.getSource('airports') as mapboxgl.GeoJSONSource).setData(visibleData);
-                    } else {
-                        map.addSource('airports', {
-                            type: 'geojson',
-                            data: visibleData,
-                        });
-
-                        map.addLayer({
-                            id: 'airport-points',
-                            type: 'circle',
-                            source: 'airports',
-                            paint: {
-                                'circle-radius': 4,
-                                'circle-color': '#3399ff',
-                                'circle-stroke-width': 1,
-                                'circle-stroke-color': '#fff',
-                            }
-                        });
-                    }
-                };
-
-                updateAirports();
-                map.on('moveend', updateAirports);
-                // cleanupUpdateAirports is already declared as a const above
-                // so just reassigning here is not needed.
-            }
         });
 
         return () => {
-            cleanupUpdateAirports();
-            if (map.getLayer('sightings-heat')) map.removeLayer('sightings-heat');
+            if (mapInstanceRef.current) {
+                if (mapInstanceRef.current.getLayer('sightings-heat')) mapInstanceRef.current.removeLayer('sightings-heat');
+                if (mapInstanceRef.current.getLayer('airport-points')) mapInstanceRef.current.removeLayer('airport-points');
+                if (mapInstanceRef.current.getSource('airports')) mapInstanceRef.current.removeSource('airports');
+                mapInstanceRef.current.remove();
+                mapInstanceRef.current = null;
+            }
+        };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    // Update sightings data source when filteredSightings change
+    useEffect(() => {
+        const map = mapInstanceRef.current;
+        if (!map) return;
+        const jitterIndexMap = new Map<string, number>();
+        const geojsonSightings: FeatureCollection<Point> = {
+            type: 'FeatureCollection',
+            features: filteredSightings.map(sighting => {
+                const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
+                const currentIndex = jitterIndexMap.get(key) ?? 0;
+                jitterIndexMap.set(key, currentIndex + 1);
+                const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
+                return {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [longitude, latitude]
+                    },
+                    properties: {
+                        id: sighting.id,
+                        description: sighting.description,
+                        city: sighting.city,
+                        shape: sighting.shape,
+                        date: sighting.date,
+                        noise: sighting.noise,
+                        count: sighting.count,
+                        imageUrl: sighting.imageUrl
+                    }
+                };
+            })
+        };
+        if (map.getSource('sightings')) {
+            (map.getSource('sightings') as mapboxgl.GeoJSONSource).setData(geojsonSightings);
+        }
+    }, [filteredSightings]);
+
+    // Show/hide airports on toggle
+    useEffect(() => {
+        const map = mapInstanceRef.current;
+        if (!map) return;
+        let removeMoveend: (() => void) | undefined;
+        let removed = false;
+        // Airports update logic, only when showAirports changes
+        const updateAirports = async () => {
+            const messageId = 'zoom-in-message';
+            if (map.getZoom() < 5) {
+                if (!document.getElementById(messageId)) {
+                    const msg = document.createElement('div');
+                    msg.id = messageId;
+                    msg.textContent = 'Zoom in to view airports';
+                    Object.assign(msg.style, {
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                        color: 'white',
+                        padding: '10px 20px',
+                        borderRadius: '8px',
+                        fontSize: '15px',
+                        zIndex: '999',
+                        transition: 'opacity 0.5s ease-in-out',
+                        opacity: '1',
+                        backdropFilter: 'blur(6px)',
+                        WebkitBackdropFilter: 'blur(6px)'
+                    });
+                    map.getContainer().appendChild(msg);
+                    setTimeout(() => {
+                        msg.style.opacity = '0';
+                        setTimeout(() => {
+                            msg.remove();
+                        }, 500);
+                    }, 2500);
+                }
+                // Too zoomed out — clear airports
+                if (map.getSource('airports')) {
+                    (map.getSource('airports') as mapboxgl.GeoJSONSource).setData({
+                        type: 'FeatureCollection',
+                        features: []
+                    });
+                }
+                return;
+            }
+
+            const bounds = map.getBounds();
+            if (!bounds) return;
+
+            const res = await fetch('/airports.geojson');
+            const airportsData = await res.json();
+            const featuresInBounds = (airportsData.features as Feature<Point>[]).filter((feature: Feature<Point>) => {
+                const [lon, lat] = feature.geometry.coordinates;
+                return bounds.contains([lon, lat]);
+            });
+            const visibleData: FeatureCollection<Point> = {
+                type: 'FeatureCollection',
+                features: featuresInBounds,
+            };
+            if (map.getSource('airports')) {
+                (map.getSource('airports') as mapboxgl.GeoJSONSource).setData(visibleData);
+            } else {
+                map.addSource('airports', {
+                    type: 'geojson',
+                    data: visibleData,
+                });
+                map.addLayer({
+                    id: 'airport-points',
+                    type: 'circle',
+                    source: 'airports',
+                    paint: {
+                        'circle-radius': 4,
+                        'circle-color': '#3399ff',
+                        'circle-stroke-width': 1,
+                        'circle-stroke-color': '#fff',
+                    }
+                });
+            }
+        };
+
+        if (showAirports) {
+            updateAirports();
+            const onMoveend = () => updateAirports();
+            map.on('moveend', onMoveend);
+            removeMoveend = () => {
+                map.off('moveend', onMoveend);
+            };
+        } else {
+            // Remove airport layer/source if present
             if (map.getLayer('airport-points')) map.removeLayer('airport-points');
             if (map.getSource('airports')) map.removeSource('airports');
-            map.remove();
+        }
+        return () => {
+            if (removeMoveend) removeMoveend();
         };
-    }, [filteredSightings, showAirports, showHeatmap]);
+    }, [showAirports]);
+
+    // Show/hide sightings heatmap layer
+    useEffect(() => {
+        const map = mapInstanceRef.current;
+        if (!map) return;
+        if (map.getLayer('sightings-heat')) {
+            map.setLayoutProperty('sightings-heat', 'visibility', showHeatmap ? 'visible' : 'none');
+        }
+    }, [showHeatmap]);
 
     return <div ref={mapRef} className={styles.mapContainer} />;
 };

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Map.module.css';
-import type { FeatureCollection, Point } from 'geojson';
+import type { FeatureCollection, Point, Feature } from 'geojson';
 
 console.log('Mapbox token:', process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
@@ -37,7 +37,6 @@ type PointGeometry = {
 const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
     const mapRef = useRef<HTMLDivElement>(null);
     const [sightings, setSightings] = useState<Sighting[]>([]);
-    const [visibleAirports, setVisibleAirports] = useState<any>([]);
 
     useEffect(() => {
         fetch('/api/sightings')
@@ -156,7 +155,7 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
         );
 
         // Declare cleanupUpdateAirports to avoid runtime error if not defined
-        let cleanupUpdateAirports = () => {};
+        const cleanupUpdateAirports = () => {};
         map.on('load', () => {
             // Set globe fog for space-like background
             map.setFog({
@@ -307,19 +306,20 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
                 );
             });
             // Show airports if enabled
-            let cleanupUpdateAirports = () => {};
             if (showAirports) {
                 const updateAirports = async () => {
                     const bounds = map.getBounds();
+                    if (!bounds) return;
+
                     const res = await fetch('/airports.geojson');
                     const airportsData = await res.json();
 
-                    const featuresInBounds = (airportsData.features as any[]).filter((feature) => {
+                    const featuresInBounds = (airportsData.features as Feature<Point>[]).filter((feature) => {
                         const [lon, lat] = feature.geometry.coordinates;
                         return bounds.contains([lon, lat]);
                     });
 
-                    const visibleData = {
+                    const visibleData: FeatureCollection<Point> = {
                         type: 'FeatureCollection',
                         features: featuresInBounds,
                     };
@@ -348,7 +348,8 @@ const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
 
                 updateAirports();
                 map.on('moveend', updateAirports);
-                cleanupUpdateAirports = () => map.off('moveend', updateAirports);
+                // cleanupUpdateAirports is already declared as a const above
+                // so just reassigning here is not needed.
             }
         });
 

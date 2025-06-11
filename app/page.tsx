@@ -17,26 +17,12 @@ export default function Home() {
     const [showHeatmap, setShowHeatmap] = useState(false);
 
     useEffect(() => {
-        console.log('Current shape:', shape);
-        console.log('Current dateRange:', dateRange);
-    }, [shape, dateRange]);
-
-    useEffect(() => {
-        // Ensure default values are applied to shape and dateRange on mount
-        setShape(prev => prev && prev !== '' ? prev : 'all');
-        setDateRange(prev => prev && prev !== '' ? prev : 'all');
         const timer = setTimeout(() => setLoading(false), 1500);
         fetch('/api/sightings')
             .then(res => res.json())
             .then(data => setTotalSightings(data.length))
             .catch(err => console.error('Failed to fetch sightings count', err));
         return () => clearTimeout(timer);
-    }, []);
-
-    useEffect(() => {
-        // Force a state update to ensure filters apply correctly on initial load
-        setShape(prev => prev && prev !== '' ? prev : 'all');
-        setDateRange(prev => prev && prev !== '' ? prev : 'all');
     }, []);
 
     if (loading) return <LoadingScreen />;

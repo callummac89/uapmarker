@@ -57,11 +57,14 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const filteredSightings = useMemo(() => {
         if (!sightings.length) return [];
         const now = new Date();
-        // Normalize dateRange and shape
-        const normalizedShape = (!shape || shape.trim() === '' || shape.toLowerCase() === 'all') ? 'all' : shape.toLowerCase();
-        const normalizedDateRange = (!dateRange || dateRange.trim() === '' || dateRange.toLowerCase() === 'all') ? 'all' : dateRange;
+        // Stricter normalization for shape and dateRange, default to 'all'
+        const normalizedShape = shape?.trim().toLowerCase() || 'all';
+        const normalizedDateRange = dateRange?.trim().toLowerCase() || 'all';
         let startDate: Date | null = null;
 
+        // Debug logging for normalization
+        console.log('Normalized Shape:', normalizedShape);
+        console.log('Normalized Date Range:', normalizedDateRange);
         console.log('Current dateRange:', dateRange);
         console.log('All sightings before filter:', sightings.map(s => s.date));
 
@@ -106,6 +109,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             return include;
         });
 
+        // Confirm the log for filtered result count
         console.log('Filtered sightings:', filtered.length);
 
         return filtered;

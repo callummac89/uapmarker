@@ -30,6 +30,12 @@ export default function Home() {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        // Force a state update to ensure filters apply correctly on initial load
+        if (shape === '' || shape === undefined) setShape('all');
+        if (dateRange === '' || dateRange === undefined) setDateRange('all');
+    }, []);
+
     if (loading) return <LoadingScreen />;
 
     return (

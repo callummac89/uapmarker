@@ -86,7 +86,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         console.log('Date range:', dateRange);
 
         // Normalize shape and ensure default is 'all'
-        const normalizedShape = (shape && shape.trim().toLowerCase()) || 'all';
+        const normalizedShape = (!shape || shape.trim() === '' || shape.toLowerCase() === 'all') ? 'all' : shape.toLowerCase();
         const filtered = sightings.filter(sighting => {
             const sightingDate = new Date(sighting.date);
             const sightingUTC = sightingDate.getTime();

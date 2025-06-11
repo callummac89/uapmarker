@@ -55,6 +55,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     }, []);
 
     const filteredSightings = useMemo(() => {
+        if (!sightings.length) return [];
         const now = new Date();
         console.log('Current dateRange:', dateRange);
         let startDate: Date | null = null;

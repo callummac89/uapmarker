@@ -56,19 +56,12 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
 
     const filteredSightings = useMemo(() => {
         if (!sightings || sightings.length === 0) return [];
-        const now = new Date();
-        // Stricter normalization for shape and dateRange, default to 'all'
-        const normalizedShape = (shape && shape.trim().toLowerCase()) || 'all';
-        const normalizedDateRange = (dateRange && dateRange.trim().toLowerCase()) || 'all';
-        // Add debugging log after normalization
-        console.log('[Filter Init] Shape:', normalizedShape, 'Date Range:', normalizedDateRange);
-        let startDate: Date | null = null;
 
-        // Debug logging for normalization
-        console.log('Normalized Shape:', normalizedShape);
-        console.log('Normalized Date Range:', normalizedDateRange);
-        console.log('Current dateRange:', dateRange);
-        console.log('All sightings before filter:', sightings.map(s => s.date));
+        // Always explicitly default to 'all' for shape and dateRange
+        const normalizedShape = shape && shape.trim().length > 0 ? shape.trim().toLowerCase() : 'all';
+        const normalizedDateRange = dateRange && dateRange.trim().length > 0 ? dateRange.trim().toLowerCase() : 'all';
+        let startDate: Date | null = null;
+        const now = new Date();
 
         switch (normalizedDateRange) {
             case '24h':
@@ -87,33 +80,16 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                 startDate = null;
         }
 
-        console.log('Start date (UTC):', startDate?.toISOString());
-        console.log('All sightings:', sightings);
-        console.log('Date range:', dateRange);
-
         const filtered = sightings.filter(sighting => {
             const sightingDate = new Date(sighting.date);
             const sightingUTC = sightingDate.getTime();
             const startUTC = startDate ? startDate.getTime() : null;
-            const withinDate = !startUTC || sightingUTC >= startUTC;
             const shapeMatch = normalizedShape === 'all' || sighting.shape.toLowerCase() === normalizedShape;
-
-            const include = withinDate && shapeMatch;
-            if (!include) {
-                console.log('[Filtered out]', {
-                    sighting: sighting.date,
-                    shape: sighting.shape,
-                    withinDate,
-                    shapeMatch,
-                });
-            }
-
-            return include;
+            const withinDate = !startUTC || sightingUTC >= startUTC;
+            return shapeMatch && withinDate;
         });
 
-        // Confirm the log for filtered result count
-        console.log('Filtered sightings:', filtered.length);
-
+        console.debug('[Filtered Sightings]', filtered.length);
         return filtered;
     }, [sightings, shape, dateRange]);
 

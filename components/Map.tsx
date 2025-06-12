@@ -55,11 +55,13 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     }, []);
 
     const filteredSightings = useMemo(() => {
-        if (!sightings.length) return [];
+        if (!sightings || sightings.length === 0) return [];
         const now = new Date();
         // Stricter normalization for shape and dateRange, default to 'all'
-        const normalizedShape = shape?.trim().toLowerCase() || 'all';
-        const normalizedDateRange = dateRange?.trim().toLowerCase() || 'all';
+        const normalizedShape = (shape && shape.trim().toLowerCase()) || 'all';
+        const normalizedDateRange = (dateRange && dateRange.trim().toLowerCase()) || 'all';
+        // Add debugging log after normalization
+        console.log('[Filter Init] Shape:', normalizedShape, 'Date Range:', normalizedDateRange);
         let startDate: Date | null = null;
 
         // Debug logging for normalization

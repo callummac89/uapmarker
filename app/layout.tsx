@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "UAP Marker",
-  description: "Track and report unexplained aerial sightings.",
+  description: "Seen a UAP/UFO? Track and report unexplained aerial sightings on UAP Marker.",
 };
 
 export default function RootLayout({
@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/ufo-icon.png" type="image/png" />
+      </head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-07T6BE7J3E"
         strategy="afterInteractive"

@@ -16,14 +16,24 @@ export default function Home() {
     const [showAirports, setShowAirports] = useState(false);
     const [showHeatmap, setShowHeatmap] = useState(false);
 
+
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 1500);
+
         fetch('/api/sightings')
             .then(res => res.json())
-            .then(data => setTotalSightings(data.length))
+            .then(data => {
+                setTotalSightings(data.length);
+            })
             .catch(err => console.error('Failed to fetch sightings count', err));
+
         return () => clearTimeout(timer);
     }, []);
+
+    useEffect(() => {
+        console.log('Current shape:', shape);
+        console.log('Current dateRange:', dateRange);
+    }, [shape, dateRange]);
 
     if (loading) return <LoadingScreen />;
 
@@ -46,7 +56,12 @@ export default function Home() {
 
             {showForm && <SightingForm onClose={() => setShowForm(false)} />}
 
-            <Map shape={shape} dateRange={dateRange} showAirports={showAirports} showHeatmap={showHeatmap} />
+            <Map
+                shape={shape}
+                dateRange={dateRange}
+                showAirports={showAirports}
+                showHeatmap={showHeatmap}
+            />
 
             <footer className={styles.footer}>
                 <div className={styles.footerRow}>

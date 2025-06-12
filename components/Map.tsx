@@ -362,7 +362,10 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                     }
                 );
             });
-            setMapReady(true);
+            map.once('idle', () => {
+                console.log('✅ Map is fully ready. Setting mapReady.');
+                setMapReady(true);
+            });
         });
 
         return () => {
@@ -379,20 +382,15 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
 
     // Update sightings data source when filteredSightings change
     useEffect(() => {
-        if (!mapReady) {
-            console.warn('⏳ Map not ready, skipping update');
-            return;
-        }
-
         const map = mapInstanceRef.current;
-        if (!map || !map.isStyleLoaded()) {
-            console.warn('Map not ready to receive sightings data');
+        if (!map || !map.isStyleLoaded() || !mapReady) {
+            console.warn('🛑 Map not ready, skipping update');
             return;
         }
 
         const source = map.getSource('sightings');
         if (!source) {
-            console.warn('Sightings source not yet available');
+            console.warn('⛔️ Sightings source not available');
             return;
         }
 

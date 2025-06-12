@@ -41,9 +41,12 @@ export default function Home() {
         <div className={styles.fullPage}>
             <Head>
                 <title>UAP Marker</title>
+                <link rel="icon" href="/logo.png" />
             </Head>
             <header className={styles.header}>
-                <h1 className={styles.logo}>UAP MARKER</h1>
+                <h1 className={styles.logo}>
+                    <img src="/logo.png" alt="UAP Marker Logo" style={{ height: '20px', marginRight: '10px', verticalAlign: 'middle' }} />
+                </h1>
                 {totalSightings !== null && (
                     <span className={styles.count}>{totalSightings} Sightings</span>
                 )}

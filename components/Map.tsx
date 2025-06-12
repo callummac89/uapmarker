@@ -43,6 +43,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const initialZoomRef = useRef<number>(4);
     // Store the map instance for later access in effects
     const mapInstanceRef = useRef<mapboxgl.Map | null>(null);
+    const [mapReady, setMapReady] = useState(false);
 
     useEffect(() => {
         fetch('/api/sightings')
@@ -361,6 +362,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                     }
                 );
             });
+            setMapReady(true);
         });
 
         return () => {
@@ -377,6 +379,11 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
 
     // Update sightings data source when filteredSightings change
     useEffect(() => {
+        if (!mapReady) {
+            console.warn('⏳ Map not ready, skipping update');
+            return;
+        }
+
         const map = mapInstanceRef.current;
         if (!map || !map.isStyleLoaded()) {
             console.warn('Map not ready to receive sightings data');
@@ -418,7 +425,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         };
 
         (source as mapboxgl.GeoJSONSource).setData(geojsonSightings);
-    }, [filteredSightings]);
+    }, [filteredSightings, mapReady]);
 
     // Show/hide airports on toggle
     useEffect(() => {

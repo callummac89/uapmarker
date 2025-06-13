@@ -26,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <title>UAP Marker – Track and report unexplained aerial sightings</title>
         <link rel="icon" href="/ufo-icon.png" type="image/png" />
       </head>
       <Script

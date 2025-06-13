@@ -15,7 +15,6 @@ export default function Home() {
     const [dateRange, setDateRange] = useState('all');
     const [totalSightings, setTotalSightings] = useState<number | null>(null);
     const [showAirports, setShowAirports] = useState(false);
-    const [showHeatmap, setShowHeatmap] = useState(false);
 
 
     useEffect(() => {
@@ -64,7 +63,6 @@ export default function Home() {
                 shape={shape}
                 dateRange={dateRange}
                 showAirports={showAirports}
-                showHeatmap={showHeatmap}
             />
 
             <DateRangeSliderPanel

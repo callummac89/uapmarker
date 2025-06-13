@@ -1,0 +1,7887 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -59.2095,-33.96701 ]
+    },
+    "properties": {
+    "FIELD1":0,
+    "Project Name":"Atucha nuclear power plant",
+    "Country/Area":"Argentina",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -59.2073,-33.9672 ]
+    },
+    "properties": {
+    "FIELD1":1,
+    "Project Name":"Atucha nuclear power plant",
+    "Country/Area":"Argentina",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -59.2075,-33.9672 ]
+    },
+    "properties": {
+    "FIELD1":2,
+    "Project Name":"Atucha nuclear power plant",
+    "Country/Area":"Argentina",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -59.21301,-33.9678 ]
+    },
+    "properties": {
+    "FIELD1":3,
+    "Project Name":"CAREM nuclear power plant",
+    "Country/Area":"Argentina",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -64.4422,-32.2316 ]
+    },
+    "properties": {
+    "FIELD1":4,
+    "Project Name":"Embalse nuclear power plant",
+    "Country/Area":"Argentina",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.1423,40.1817 ]
+    },
+    "properties": {
+    "FIELD1":5,
+    "Project Name":"Armenian nuclear power plant",
+    "Country/Area":"Armenia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.88501,48.3546 ]
+    },
+    "properties": {
+    "FIELD1":8,
+    "Project Name":"Zwentendorf nuclear power plant",
+    "Country/Area":"Austria",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.1355,40.0161 ]
+    },
+    "properties": {
+    "FIELD1":9,
+    "Project Name":"Navai New nuclear power plant",
+    "Country/Area":"Azerbaijan",
+    "City":"Navahi",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.1355,40.0161 ]
+    },
+    "properties": {
+    "FIELD1":10,
+    "Project Name":"Navai Original nuclear power plant",
+    "Country/Area":"Azerbaijan",
+    "City":"Navahi",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 89.0453,24.0656 ]
+    },
+    "properties": {
+    "FIELD1":11,
+    "Project Name":"Rooppur nuclear power plant",
+    "Country/Area":"Bangladesh",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.0937,54.7598 ]
+    },
+    "properties": {
+    "FIELD1":13,
+    "Project Name":"Astravets nuclear power plant",
+    "Country/Area":"Belarus",
+    "City":"Varnianski sieĺski Saviet",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0445,53.7208 ]
+    },
+    "properties": {
+    "FIELD1":15,
+    "Project Name":"Minsk nuclear power plant",
+    "Country/Area":"Belarus",
+    "City":"Minsk",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.0998,51.2169 ]
+    },
+    "properties": {
+    "FIELD1":17,
+    "Project Name":"BR3 nuclear power plant",
+    "Country/Area":"Belgium",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.2597,51.3254 ]
+    },
+    "properties": {
+    "FIELD1":18,
+    "Project Name":"Doel nuclear power plant",
+    "Country/Area":"Belgium",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.2714,50.5334 ]
+    },
+    "properties": {
+    "FIELD1":22,
+    "Project Name":"Tihange nuclear power plant",
+    "Country/Area":"Belgium",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -44.4585,-23.0069 ]
+    },
+    "properties": {
+    "FIELD1":25,
+    "Project Name":"Angra nuclear power plant",
+    "Country/Area":"Brazil",
+    "City":"Angra dos Reis",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -44.4598,-23.0077 ]
+    },
+    "properties": {
+    "FIELD1":26,
+    "Project Name":"Angra nuclear power plant",
+    "Country/Area":"Brazil",
+    "City":"Angra dos Reis",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -44.47201,-23.0091 ]
+    },
+    "properties": {
+    "FIELD1":27,
+    "Project Name":"Angra nuclear power plant",
+    "Country/Area":"Brazil",
+    "City":"Angra dos Reis",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.1867,43.6294 ]
+    },
+    "properties": {
+    "FIELD1":28,
+    "Project Name":"Belene nuclear power plant",
+    "Country/Area":"Bulgaria",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.1867,43.6294 ]
+    },
+    "properties": {
+    "FIELD1":30,
+    "Project Name":"Belene Original nuclear power plant",
+    "Country/Area":"Bulgaria",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.7685,43.7497 ]
+    },
+    "properties": {
+    "FIELD1":32,
+    "Project Name":"Kozloduy nuclear power plant",
+    "Country/Area":"Bulgaria",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.489,53.534 ]
+    },
+    "properties": {
+    "FIELD1":40,
+    "Project Name":"Alberta nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5747,44.3391 ]
+    },
+    "properties": {
+    "FIELD1":42,
+    "Project Name":"Bruce nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.6027,44.319 ]
+    },
+    "properties": {
+    "FIELD1":46,
+    "Project Name":"Bruce nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5895,44.3092 ]
+    },
+    "properties": {
+    "FIELD1":50,
+    "Project Name":"Bruce nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.3636,46.05001 ]
+    },
+    "properties": {
+    "FIELD1":54,
+    "Project Name":"Chalk River nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.7057,43.8733 ]
+    },
+    "properties": {
+    "FIELD1":55,
+    "Project Name":"Darlington New nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"Clarington",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.7239,43.8697 ]
+    },
+    "properties": {
+    "FIELD1":59,
+    "Project Name":"Darlington nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"Clarington",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.6006,44.3265 ]
+    },
+    "properties": {
+    "FIELD1":65,
+    "Project Name":"Douglas Point (AECL) nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3579,46.3953 ]
+    },
+    "properties": {
+    "FIELD1":66,
+    "Project Name":"Gentilly nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3556,46.3955 ]
+    },
+    "properties": {
+    "FIELD1":67,
+    "Project Name":"Gentilly nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.6578,46.1867 ]
+    },
+    "properties": {
+    "FIELD1":68,
+    "Project Name":"Nuclear Power Demonstration (NPD) nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.0689,43.8107 ]
+    },
+    "properties": {
+    "FIELD1":69,
+    "Project Name":"Pickering nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"Pickering",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.0639,43.8096 ]
+    },
+    "properties": {
+    "FIELD1":73,
+    "Project Name":"Pickering nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"Pickering",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.4543,45.0686 ]
+    },
+    "properties": {
+    "FIELD1":77,
+    "Project Name":"Point Lepreau nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -130.4247167,54.4675343 ]
+    },
+    "properties": {
+    "FIELD1":78,
+    "Project Name":"Prodigy nuclear power plant",
+    "Country/Area":"Canada",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.335496,40.003227 ]
+    },
+    "properties": {
+    "FIELD1":79,
+    "Project Name":"10MW High Temperature Gas-cooled Reactor Test Module (HTR-10) nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.0171,31.1123 ]
+    },
+    "properties": {
+    "FIELD1":80,
+    "Project Name":"Anhui Wuhu nuclear power plant",
+    "Country/Area":"China",
+    "City":"Digang",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.224169,21.506512 ]
+    },
+    "properties": {
+    "FIELD1":84,
+    "Project Name":"Bailong nuclear power plant",
+    "Country/Area":"China",
+    "City":"Jiangshan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.515734,27.200205 ]
+    },
+    "properties": {
+    "FIELD1":90,
+    "Project Name":"Cangnan San'ao nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xiaguan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.8094,39.765321 ]
+    },
+    "properties": {
+    "FIELD1":96,
+    "Project Name":"CGN Bohai ACPR50S nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.49301,28.9188 ]
+    },
+    "properties": {
+    "FIELD1":97,
+    "Project Name":"Changde nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.896271,19.459133 ]
+    },
+    "properties": {
+    "FIELD1":101,
+    "Project Name":"Changjiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Haiwei",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.3576,40.4382 ]
+    },
+    "properties": {
+    "FIELD1":105,
+    "Project Name":"Chengde nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.0303,39.7408 ]
+    },
+    "properties": {
+    "FIELD1":109,
+    "Project Name":"China Experimental Fast Reactor (CEFR) nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xinzhen",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.4435,37.49364 ]
+    },
+    "properties": {
+    "FIELD1":110,
+    "Project Name":"CNNC ACP100S nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.5434,22.59801 ]
+    },
+    "properties": {
+    "FIELD1":114,
+    "Project Name":"Daya Bay nuclear power plant",
+    "Country/Area":"China",
+    "City":"Dapeng New Area",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.5988,39.7895 ]
+    },
+    "properties": {
+    "FIELD1":116,
+    "Project Name":"Donggang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.557081,21.669663 ]
+    },
+    "properties": {
+    "FIELD1":120,
+    "Project Name":"Fangchenggang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Guangpo",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.942102,30.441069 ]
+    },
+    "properties": {
+    "FIELD1":126,
+    "Project Name":"Fangjiashan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Qinshan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.5308,29.85131 ]
+    },
+    "properties": {
+    "FIELD1":128,
+    "Project Name":"Fuling nuclear power plant",
+    "Country/Area":"China",
+    "City":"Nantuo",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.4426,25.4403 ]
+    },
+    "properties": {
+    "FIELD1":132,
+    "Project Name":"Fuqing nuclear power plant",
+    "Country/Area":"China",
+    "City":"Sanshan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 102.460965,38.928703 ]
+    },
+    "properties": {
+    "FIELD1":138,
+    "Project Name":"Gansu Wuwei Thorium Molten Salt Reactor nuclear power plant",
+    "Country/Area":"China",
+    "City":"Hongshagang",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.9461,25.82845 ]
+    },
+    "properties": {
+    "FIELD1":139,
+    "Project Name":"Ganzhou nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.826,31.617 ]
+    },
+    "properties": {
+    "FIELD1":143,
+    "Project Name":"Guangshui nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.1852,27.7373 ]
+    },
+    "properties": {
+    "FIELD1":147,
+    "Project Name":"Guizhou Small Reactor nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.1827,22.7913 ]
+    },
+    "properties": {
+    "FIELD1":149,
+    "Project Name":"Haifeng nuclear power plant",
+    "Country/Area":"China",
+    "City":"Houmen",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.722706,38.13483 ]
+    },
+    "properties": {
+    "FIELD1":151,
+    "Project Name":"Haixing nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xiangfang",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.377983,36.708698 ]
+    },
+    "properties": {
+    "FIELD1":157,
+    "Project Name":"Haiyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.3401,41.2832 ]
+    },
+    "properties": {
+    "FIELD1":163,
+    "Project Name":"Hengren nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.4307,26.6393 ]
+    },
+    "properties": {
+    "FIELD1":167,
+    "Project Name":"Hengyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Jianghe",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.2447,24.0987 ]
+    },
+    "properties": {
+    "FIELD1":171,
+    "Project Name":"Heyuan nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.4774,39.7964 ]
+    },
+    "properties": {
+    "FIELD1":175,
+    "Project Name":"Hongyanhe nuclear power plant",
+    "Country/Area":"China",
+    "City":"Hongyanhe",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.3222,46.8015 ]
+    },
+    "properties": {
+    "FIELD1":181,
+    "Project Name":"Jiamusi nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.6417,29.9778 ]
+    },
+    "properties": {
+    "FIELD1":185,
+    "Project Name":"Jiangxi Pengze nuclear power plant",
+    "Country/Area":"China",
+    "City":"Madang",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.3692,23.5544 ]
+    },
+    "properties": {
+    "FIELD1":189,
+    "Project Name":"Jieyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 127.0034,42.5784 ]
+    },
+    "properties": {
+    "FIELD1":195,
+    "Project Name":"Jingyu Chisong nuclear power plant",
+    "Country/Area":"China",
+    "City":"Chisong",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.949035,29.054853 ]
+    },
+    "properties": {
+    "FIELD1":199,
+    "Project Name":"Jinqimen nuclear power plant",
+    "Country/Area":"China",
+    "City":"Hepu",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.9715,30.3606 ]
+    },
+    "properties": {
+    "FIELD1":205,
+    "Project Name":"Jiyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.803537,21.56717 ]
+    },
+    "properties": {
+    "FIELD1":209,
+    "Project Name":"Lianjiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Cheban",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.5531,22.6056 ]
+    },
+    "properties": {
+    "FIELD1":215,
+    "Project Name":"Ling'ao nuclear power plant",
+    "Country/Area":"China",
+    "City":"Dapeng New Area",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.896271,19.459133 ]
+    },
+    "properties": {
+    "FIELD1":219,
+    "Project Name":"Linglong nuclear power plant",
+    "Country/Area":"China",
+    "City":"Haiwei",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.0883,29.0392 ]
+    },
+    "properties": {
+    "FIELD1":220,
+    "Project Name":"Longyou nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.809748,22.752379 ]
+    },
+    "properties": {
+    "FIELD1":224,
+    "Project Name":"Lufeng nuclear power plant",
+    "Country/Area":"China",
+    "City":"Jieshi",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.0337,21.5331 ]
+    },
+    "properties": {
+    "FIELD1":230,
+    "Project Name":"Maoming nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.6416,33.3531 ]
+    },
+    "properties": {
+    "FIELD1":233,
+    "Project Name":"Nanyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.285212,27.04487 ]
+    },
+    "properties": {
+    "FIELD1":239,
+    "Project Name":"Ningde nuclear power plant",
+    "Country/Area":"China",
+    "City":"Taimushan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 116.0083,26.47275 ]
+    },
+    "properties": {
+    "FIELD1":245,
+    "Project Name":"Ningdu nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.59101,23.4603 ]
+    },
+    "properties": {
+    "FIELD1":247,
+    "Project Name":"Pingnan Baisha nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.9373,39.40454 ]
+    },
+    "properties": {
+    "FIELD1":251,
+    "Project Name":"Pulandian nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.0922,25.4248 ]
+    },
+    "properties": {
+    "FIELD1":255,
+    "Project Name":"Putian nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.941532,30.441724 ]
+    },
+    "properties": {
+    "FIELD1":257,
+    "Project Name":"Qinshan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Qinshan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.9735,25.86701 ]
+    },
+    "properties": {
+    "FIELD1":264,
+    "Project Name":"Ruijin nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.6203,36.8128 ]
+    },
+    "properties": {
+    "FIELD1":270,
+    "Project Name":"Rushan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Haiyangsuo",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.2998,30.9896 ]
+    },
+    "properties": {
+    "FIELD1":272,
+    "Project Name":"Sanba nuclear power plant",
+    "Country/Area":"China",
+    "City":"Sanba",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.63896,29.101934 ]
+    },
+    "properties": {
+    "FIELD1":276,
+    "Project Name":"Sanmen nuclear power plant",
+    "Country/Area":"China",
+    "City":"Jiantiao",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.3894,26.3646 ]
+    },
+    "properties": {
+    "FIELD1":282,
+    "Project Name":"Sanming nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xibin",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.5291,24.6791 ]
+    },
+    "properties": {
+    "FIELD1":286,
+    "Project Name":"Shaoguan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Baitu",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.5317,36.9792 ]
+    },
+    "properties": {
+    "FIELD1":290,
+    "Project Name":"Shidao Bay nuclear power plant",
+    "Country/Area":"China",
+    "City":"Shidaowan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 122.518883,36.966685 ]
+    },
+    "properties": {
+    "FIELD1":291,
+    "Project Name":"Shidao Bay nuclear power plant",
+    "Country/Area":"China",
+    "City":"Shidaowan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 127.4929,45.92408 ]
+    },
+    "properties": {
+    "FIELD1":297,
+    "Project Name":"Songhuajiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.6522,30.2648 ]
+    },
+    "properties": {
+    "FIELD1":301,
+    "Project Name":"Songzi nuclear power plant",
+    "Country/Area":"China",
+    "City":"Chendian",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.984522,22.694385 ]
+    },
+    "properties": {
+    "FIELD1":305,
+    "Project Name":"Taipingling nuclear power plant",
+    "Country/Area":"China",
+    "City":"Huangbu",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.981793,21.918322 ]
+    },
+    "properties": {
+    "FIELD1":311,
+    "Project Name":"Taishan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Chixi",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.9928,28.5564 ]
+    },
+    "properties": {
+    "FIELD1":315,
+    "Project Name":"Taohuajiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Zhanxi",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.4616,34.6877 ]
+    },
+    "properties": {
+    "FIELD1":319,
+    "Project Name":"Tianwan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Tianwan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.1773,27.7447 ]
+    },
+    "properties": {
+    "FIELD1":327,
+    "Project Name":"Tongren nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.3226,27.5946 ]
+    },
+    "properties": {
+    "FIELD1":329,
+    "Project Name":"Xiajiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.8732,27.4469 ]
+    },
+    "properties": {
+    "FIELD1":333,
+    "Project Name":"Xiangtan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Baishi",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.6758,23.9968 ]
+    },
+    "properties": {
+    "FIELD1":337,
+    "Project Name":"Xiangzhou nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.67101,29.6574 ]
+    },
+    "properties": {
+    "FIELD1":339,
+    "Project Name":"Xianning Dafan nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.7802,29.6197 ]
+    },
+    "properties": {
+    "FIELD1":343,
+    "Project Name":"Xiaomoshan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Dongshan",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.151957,26.801942 ]
+    },
+    "properties": {
+    "FIELD1":349,
+    "Project Name":"Xiapu nuclear power plant",
+    "Country/Area":"China",
+    "City":"Changchun",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.9928,36.6602 ]
+    },
+    "properties": {
+    "FIELD1":356,
+    "Project Name":"Xin'an nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xin'an",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.8731,32.1604 ]
+    },
+    "properties": {
+    "FIELD1":358,
+    "Project Name":"Xinyang nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.2666,30.43927 ]
+    },
+    "properties": {
+    "FIELD1":362,
+    "Project Name":"Xishui nuclear power plant",
+    "Country/Area":"China",
+    "City":"Qingquan",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.76101,30.9412 ]
+    },
+    "properties": {
+    "FIELD1":366,
+    "Project Name":"Xuancheng nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.548637,40.352824 ]
+    },
+    "properties": {
+    "FIELD1":370,
+    "Project Name":"Xudapu nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xudapu",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.2607,21.7092 ]
+    },
+    "properties": {
+    "FIELD1":376,
+    "Project Name":"Yangjiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Dongping",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.6413,21.7516 ]
+    },
+    "properties": {
+    "FIELD1":382,
+    "Project Name":"Yangxi nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.7901,26.6527 ]
+    },
+    "properties": {
+    "FIELD1":388,
+    "Project Name":"Yanjiashan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Yanjiashan",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 104.265012,28.924659 ]
+    },
+    "properties": {
+    "FIELD1":390,
+    "Project Name":"Yibin Beijiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Juexi",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.0672,28.26801 ]
+    },
+    "properties": {
+    "FIELD1":392,
+    "Project Name":"Yingtan nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.494944,23.828923 ]
+    },
+    "properties": {
+    "FIELD1":396,
+    "Project Name":"Zhangzhou nuclear power plant",
+    "Country/Area":"China",
+    "City":"Lieyu",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 111.8508,23.1617 ]
+    },
+    "properties": {
+    "FIELD1":402,
+    "Project Name":"Zhaoqing nuclear power plant",
+    "Country/Area":"China",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.3453,37.4871 ]
+    },
+    "properties": {
+    "FIELD1":406,
+    "Project Name":"Zhaoyuan nuclear power plant",
+    "Country/Area":"China",
+    "City":"Zhangxing",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 107.936035,30.203828 ]
+    },
+    "properties": {
+    "FIELD1":412,
+    "Project Name":"Zhong County nuclear power plant",
+    "Country/Area":"China",
+    "City":"Xinsheng",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.4592,31.32101 ]
+    },
+    "properties": {
+    "FIELD1":416,
+    "Project Name":"Zhongxiang nuclear power plant",
+    "Country/Area":"China",
+    "City":"Fengle",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 123.1778,39.7144 ]
+    },
+    "properties": {
+    "FIELD1":420,
+    "Project Name":"Zhuanghe nuclear power plant",
+    "Country/Area":"China",
+    "City":"Lizifang",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.5078,22.0662 ]
+    },
+    "properties": {
+    "FIELD1":426,
+    "Project Name":"Juragua nuclear power plant",
+    "Country/Area":"Cuba",
+    "City":"Cienfuegos",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.1479,49.0852 ]
+    },
+    "properties": {
+    "FIELD1":428,
+    "Project Name":"Dukovany nuclear power plant",
+    "Country/Area":"Czech Republic",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.3795,49.1796 ]
+    },
+    "properties": {
+    "FIELD1":434,
+    "Project Name":"Temelin nuclear power plant",
+    "Country/Area":"Czech Republic",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.4978,31.0442 ]
+    },
+    "properties": {
+    "FIELD1":440,
+    "Project Name":"El Dabaa nuclear power plant",
+    "Country/Area":"Egypt",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 24.25801,64.5301 ]
+    },
+    "properties": {
+    "FIELD1":444,
+    "Project Name":"Hanhikivi nuclear power plant",
+    "Country/Area":"Finland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.3468,60.3708 ]
+    },
+    "properties": {
+    "FIELD1":445,
+    "Project Name":"Loviisa nuclear power plant",
+    "Country/Area":"Finland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.4433,61.2371 ]
+    },
+    "properties": {
+    "FIELD1":448,
+    "Project Name":"Olkiluoto nuclear power plant",
+    "Country/Area":"Finland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.4372,61.2356 ]
+    },
+    "properties": {
+    "FIELD1":450,
+    "Project Name":"Olkiluoto nuclear power plant",
+    "Country/Area":"Finland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.87501,47.5103 ]
+    },
+    "properties": {
+    "FIELD1":452,
+    "Project Name":"Belleville nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.6932,45.256 ]
+    },
+    "properties": {
+    "FIELD1":454,
+    "Project Name":"Blayais nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.8719,48.3551 ]
+    },
+    "properties": {
+    "FIELD1":458,
+    "Project Name":"Brennilis nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.2706,45.7973 ]
+    },
+    "properties": {
+    "FIELD1":459,
+    "Project Name":"Bugey nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.2169,49.416 ]
+    },
+    "properties": {
+    "FIELD1":466,
+    "Project Name":"Cattenom nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.1656,47.2254 ]
+    },
+    "properties": {
+    "FIELD1":470,
+    "Project Name":"Chinon nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7872,50.0901 ]
+    },
+    "properties": {
+    "FIELD1":477,
+    "Project Name":"Chooz nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.6582,46.4555 ]
+    },
+    "properties": {
+    "FIELD1":480,
+    "Project Name":"Civaux nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7546,44.6325 ]
+    },
+    "properties": {
+    "FIELD1":482,
+    "Project Name":"Cruas nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.5185,47.7321 ]
+    },
+    "properties": {
+    "FIELD1":486,
+    "Project Name":"Dampierre nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.5609,47.9032 ]
+    },
+    "properties": {
+    "FIELD1":490,
+    "Project Name":"Fessenheim nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.8823,49.5366 ]
+    },
+    "properties": {
+    "FIELD1":492,
+    "Project Name":"Flamanville nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.8443,44.106 ]
+    },
+    "properties": {
+    "FIELD1":495,
+    "Project Name":"Golfech nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.1332,51.0141 ]
+    },
+    "properties": {
+    "FIELD1":497,
+    "Project Name":"Gravelines nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.8786,47.2809 ]
+    },
+    "properties": {
+    "FIELD1":505,
+    "Project Name":"Le Carnet nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7094,44.1433 ]
+    },
+    "properties": {
+    "FIELD1":509,
+    "Project Name":"Marcoule nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.5181,48.5171 ]
+    },
+    "properties": {
+    "FIELD1":513,
+    "Project Name":"Nogent nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.6354,49.8582 ]
+    },
+    "properties": {
+    "FIELD1":515,
+    "Project Name":"Paluel nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.2107,49.9764 ]
+    },
+    "properties": {
+    "FIELD1":519,
+    "Project Name":"Penly nuclear power plant",
+    "Country/Area":"France",
+    "City":"Petit-Caux",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7139,44.1526 ]
+    },
+    "properties": {
+    "FIELD1":523,
+    "Project Name":"Phenix nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.5783,47.7197 ]
+    },
+    "properties": {
+    "FIELD1":524,
+    "Project Name":"Saint-Laurent nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7554,45.4043 ]
+    },
+    "properties": {
+    "FIELD1":528,
+    "Project Name":"St. Alban nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.4701,45.7613 ]
+    },
+    "properties": {
+    "FIELD1":530,
+    "Project Name":"Superphénix nuclear power plant",
+    "Country/Area":"France",
+    "City":"Creys-Mépieu",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.7311,44.3311 ]
+    },
+    "properties": {
+    "FIELD1":531,
+    "Project Name":"Tricastin nuclear power plant",
+    "Country/Area":"France",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.4208,50.9026 ]
+    },
+    "properties": {
+    "FIELD1":535,
+    "Project Name":"AVR Reactor nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.4148,49.7093 ]
+    },
+    "properties": {
+    "FIELD1":536,
+    "Project Name":"Biblis nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.34501,53.8506 ]
+    },
+    "properties": {
+    "FIELD1":538,
+    "Project Name":"Brokdorf nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.2008,53.8912 ]
+    },
+    "properties": {
+    "FIELD1":539,
+    "Project Name":"Brunsbuettel nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.3204,52.4716 ]
+    },
+    "properties": {
+    "FIELD1":540,
+    "Project Name":"Emsland nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.1848,49.9839 ]
+    },
+    "properties": {
+    "FIELD1":541,
+    "Project Name":"Grafenrheinfeld nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.6634,54.1416 ]
+    },
+    "properties": {
+    "FIELD1":542,
+    "Project Name":"Greifswald nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.4135,52.0356 ]
+    },
+    "properties": {
+    "FIELD1":551,
+    "Project Name":"Grohnde nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.9869,50.0581 ]
+    },
+    "properties": {
+    "FIELD1":552,
+    "Project Name":"Großwelzheim nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.4016,48.515 ]
+    },
+    "properties": {
+    "FIELD1":553,
+    "Project Name":"Gundremmingen nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.2988,48.6048 ]
+    },
+    "properties": {
+    "FIELD1":556,
+    "Project Name":"Isar nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.2927,48.6044 ]
+    },
+    "properties": {
+    "FIELD1":557,
+    "Project Name":"Isar nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.99101,50.0596 ]
+    },
+    "properties": {
+    "FIELD1":558,
+    "Project Name":"Kahl nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.3272,51.7637 ]
+    },
+    "properties": {
+    "FIELD1":559,
+    "Project Name":"Kalkar nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.4398,49.0967 ]
+    },
+    "properties": {
+    "FIELD1":560,
+    "Project Name":"KNK II nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.4096,53.4102 ]
+    },
+    "properties": {
+    "FIELD1":561,
+    "Project Name":"Kruemmel nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.3005,52.4831 ]
+    },
+    "properties": {
+    "FIELD1":562,
+    "Project Name":"Lingen nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.4874,50.4086 ]
+    },
+    "properties": {
+    "FIELD1":563,
+    "Project Name":"Muelheim-Kaerlich nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.4324,49.1041 ]
+    },
+    "properties": {
+    "FIELD1":564,
+    "Project Name":"MZFR nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.1759,49.0408 ]
+    },
+    "properties": {
+    "FIELD1":565,
+    "Project Name":"Neckarwestheim nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3039,48.6047 ]
+    },
+    "properties": {
+    "FIELD1":567,
+    "Project Name":"Niederaichbach nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.0779,49.3655 ]
+    },
+    "properties": {
+    "FIELD1":568,
+    "Project Name":"Obrigheim nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.4364,49.2529 ]
+    },
+    "properties": {
+    "FIELD1":569,
+    "Project Name":"Philippsburg nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.9904,53.1478 ]
+    },
+    "properties": {
+    "FIELD1":571,
+    "Project Name":"Rheinsberg nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.5308,53.6197 ]
+    },
+    "properties": {
+    "FIELD1":572,
+    "Project Name":"Stade nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.0176,52.7237 ]
+    },
+    "properties": {
+    "FIELD1":573,
+    "Project Name":"Stendal nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.97201,51.6803 ]
+    },
+    "properties": {
+    "FIELD1":577,
+    "Project Name":"THTR-300 nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"Hamm",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.4791,53.4282 ]
+    },
+    "properties": {
+    "FIELD1":578,
+    "Project Name":"Unterweser nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.3919,51.6395 ]
+    },
+    "properties": {
+    "FIELD1":579,
+    "Project Name":"Wuergassen nuclear power plant",
+    "Country/Area":"Germany",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.8532,46.57763 ]
+    },
+    "properties": {
+    "FIELD1":580,
+    "Project Name":"Paks nuclear power plant",
+    "Country/Area":"Hungary",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.541972,21.905406 ]
+    },
+    "properties": {
+    "FIELD1":586,
+    "Project Name":"Bhimpur nuclear power plant",
+    "Country/Area":"India",
+    "City":"Bhimpur",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 80.0933,22.7701 ]
+    },
+    "properties": {
+    "FIELD1":590,
+    "Project Name":"Chutka nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 75.6322,29.44139 ]
+    },
+    "properties": {
+    "FIELD1":592,
+    "Project Name":"Gorakhpur Haryana nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 87.800433,21.702154 ]
+    },
+    "properties": {
+    "FIELD1":596,
+    "Project Name":"Haripur nuclear power plant",
+    "Country/Area":"India",
+    "City":"Haripur",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 73.33001,16.5997 ]
+    },
+    "properties": {
+    "FIELD1":602,
+    "Project Name":"Jaitapur nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 74.4398,14.86663 ]
+    },
+    "properties": {
+    "FIELD1":608,
+    "Project Name":"Kaiga nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 73.3489,21.2384 ]
+    },
+    "properties": {
+    "FIELD1":614,
+    "Project Name":"Kakrapar nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 80.1733,12.5531 ]
+    },
+    "properties": {
+    "FIELD1":618,
+    "Project Name":"Kalpakkam PFBR nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 83.7117,18.1136 ]
+    },
+    "properties": {
+    "FIELD1":619,
+    "Project Name":"Kovvada nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 77.7126,8.1689 ]
+    },
+    "properties": {
+    "FIELD1":625,
+    "Project Name":"Kudankulam nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 80.1754,12.5571 ]
+    },
+    "properties": {
+    "FIELD1":631,
+    "Project Name":"Madras nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 74.5906,23.5294 ]
+    },
+    "properties": {
+    "FIELD1":633,
+    "Project Name":"Mahi Banswara nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 78.4089,28.156 ]
+    },
+    "properties": {
+    "FIELD1":637,
+    "Project Name":"Narora nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 75.6189,24.8747 ]
+    },
+    "properties": {
+    "FIELD1":639,
+    "Project Name":"Rajasthan nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 85.499446,24.59696 ]
+    },
+    "properties": {
+    "FIELD1":647,
+    "Project Name":"Rajauli nuclear power plant",
+    "Country/Area":"India",
+    "City":"Rajauli",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 72.6617,19.8294 ]
+    },
+    "properties": {
+    "FIELD1":649,
+    "Project Name":"Tarapur nuclear power plant",
+    "Country/Area":"India",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.1815,-2.12001 ]
+    },
+    "properties": {
+    "FIELD1":653,
+    "Project Name":"Bangka Belitung Islands (ThorCon) nuclear power plant",
+    "Country/Area":"Indonesia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.1815,-2.12001 ]
+    },
+    "properties": {
+    "FIELD1":660,
+    "Project Name":"Bangka Belitung nuclear power plant",
+    "Country/Area":"Indonesia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.9291,-6.9816 ]
+    },
+    "properties": {
+    "FIELD1":662,
+    "Project Name":"Muria nuclear power plant",
+    "Country/Area":"Indonesia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.88601,28.82962 ]
+    },
+    "properties": {
+    "FIELD1":664,
+    "Project Name":"Bushehr nuclear power plant",
+    "Country/Area":"Iran",
+    "City":"Bushehr suburb village",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.3641,30.70759 ]
+    },
+    "properties": {
+    "FIELD1":667,
+    "Project Name":"Darkhovain nuclear power plant",
+    "Country/Area":"Iran",
+    "City":"Bushehr suburb village",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 57.0827474,26.4985591 ]
+    },
+    "properties": {
+    "FIELD1":669,
+    "Project Name":"Iran-Hormoz nuclear power plant",
+    "Country/Area":"Iran",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 61.0001,25.2497 ]
+    },
+    "properties": {
+    "FIELD1":673,
+    "Project Name":"Makran Coast nuclear power plant",
+    "Country/Area":"Iran",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.6309,30.881 ]
+    },
+    "properties": {
+    "FIELD1":675,
+    "Project Name":"Shivta nuclear power plant",
+    "Country/Area":"Israel",
+    "City":"Shivta",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.8716,45.0729 ]
+    },
+    "properties": {
+    "FIELD1":677,
+    "Project Name":"Caorso nuclear power plant",
+    "Country/Area":"Italy",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.2773,45.1833 ]
+    },
+    "properties": {
+    "FIELD1":678,
+    "Project Name":"Enrico Fermi nuclear power plant",
+    "Country/Area":"Italy",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.8349,41.2584 ]
+    },
+    "properties": {
+    "FIELD1":679,
+    "Project Name":"Garigliano nuclear power plant",
+    "Country/Area":"Italy",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.8067,41.4253 ]
+    },
+    "properties": {
+    "FIELD1":680,
+    "Project Name":"Latina nuclear power plant",
+    "Country/Area":"Italy",
+    "City":"Latina",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.5301,42.3594 ]
+    },
+    "properties": {
+    "FIELD1":681,
+    "Project Name":"Montalto di Castro nuclear power plant",
+    "Country/Area":"Italy",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.4263,34.2203 ]
+    },
+    "properties": {
+    "FIELD1":683,
+    "Project Name":"Ashihama nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.0191,35.7544 ]
+    },
+    "properties": {
+    "FIELD1":685,
+    "Project Name":"Fugen nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Tsuruga",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.0331,37.4231 ]
+    },
+    "properties": {
+    "FIELD1":686,
+    "Project Name":"Fukushima Daiichi nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.0265,37.3164 ]
+    },
+    "properties": {
+    "FIELD1":694,
+    "Project Name":"Fukushima Daini nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.83601,33.5152 ]
+    },
+    "properties": {
+    "FIELD1":698,
+    "Project Name":"Genkai nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.1421,34.6235 ]
+    },
+    "properties": {
+    "FIELD1":702,
+    "Project Name":"Hamaoka nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Omaezaki",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.1442,34.6231 ]
+    },
+    "properties": {
+    "FIELD1":707,
+    "Project Name":"Hamaoka nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Omaezaki",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.3593,41.2344 ]
+    },
+    "properties": {
+    "FIELD1":708,
+    "Project Name":"Higashidori (Tepco) nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.3903,41.188 ]
+    },
+    "properties": {
+    "FIELD1":710,
+    "Project Name":"Higashidori (Tohoku) nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.9491,34.2903 ]
+    },
+    "properties": {
+    "FIELD1":712,
+    "Project Name":"Hohoku nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Hohokucho",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 132.3088,33.4909 ]
+    },
+    "properties": {
+    "FIELD1":714,
+    "Project Name":"Ikata nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 140.6059,36.4568 ]
+    },
+    "properties": {
+    "FIELD1":717,
+    "Project Name":"Japan Power Demonstration Reactor nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 132.1182,33.8512 ]
+    },
+    "properties": {
+    "FIELD1":718,
+    "Project Name":"Kaminoseki nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.5941,37.4259 ]
+    },
+    "properties": {
+    "FIELD1":720,
+    "Project Name":"Kashiwazaki Kariwa nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Kashiwazaki",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.9048,37.7627 ]
+    },
+    "properties": {
+    "FIELD1":727,
+    "Project Name":"Maki nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Niigata",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.9634,35.7024 ]
+    },
+    "properties": {
+    "FIELD1":729,
+    "Project Name":"Mihama nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.9878,35.74001 ]
+    },
+    "properties": {
+    "FIELD1":732,
+    "Project Name":"Monju nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Tsuruga",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.0342,37.5134 ]
+    },
+    "properties": {
+    "FIELD1":733,
+    "Project Name":"Namie-Odaka nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.6544,35.5424 ]
+    },
+    "properties": {
+    "FIELD1":734,
+    "Project Name":"Ohi nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 140.9131,41.5099 ]
+    },
+    "properties": {
+    "FIELD1":738,
+    "Project Name":"Ohma nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 141.5003,38.3987 ]
+    },
+    "properties": {
+    "FIELD1":740,
+    "Project Name":"Onagawa nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.1887,31.8335 ]
+    },
+    "properties": {
+    "FIELD1":743,
+    "Project Name":"Sendai nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Satsumasendai",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.1894,31.8336 ]
+    },
+    "properties": {
+    "FIELD1":745,
+    "Project Name":"Sendai nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Satsumasendai",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.7265,37.0609 ]
+    },
+    "properties": {
+    "FIELD1":746,
+    "Project Name":"Shika nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 132.9992,35.5383 ]
+    },
+    "properties": {
+    "FIELD1":748,
+    "Project Name":"Shimane nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Matsue",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.5036,35.5223 ]
+    },
+    "properties": {
+    "FIELD1":751,
+    "Project Name":"Takahama nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 140.6028,36.4215 ]
+    },
+    "properties": {
+    "FIELD1":755,
+    "Project Name":"Tokai nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Hitachinaka",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 140.5125,43.0367 ]
+    },
+    "properties": {
+    "FIELD1":757,
+    "Project Name":"Tomari nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.0197,35.7506 ]
+    },
+    "properties": {
+    "FIELD1":760,
+    "Project Name":"Tsuruga nuclear power plant",
+    "Country/Area":"Japan",
+    "City":"Tsuruga",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.8237,31.8328 ]
+    },
+    "properties": {
+    "FIELD1":764,
+    "Project Name":"Qasr-Amra nuclear power plant",
+    "Country/Area":"Jordan",
+    "City":"Azraq",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 51.28201,43.6092 ]
+    },
+    "properties": {
+    "FIELD1":766,
+    "Project Name":"Aktau nuclear power plant",
+    "Country/Area":"Kazakhstan",
+    "City":"Aktau",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 78.5322,50.7543 ]
+    },
+    "properties": {
+    "FIELD1":767,
+    "Project Name":"Kurchatov nuclear power plant",
+    "Country/Area":"Kazakhstan",
+    "City":"Kurchatov",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 73.9596,45.2157 ]
+    },
+    "properties": {
+    "FIELD1":769,
+    "Project Name":"Ulken nuclear power plant",
+    "Country/Area":"Kazakhstan",
+    "City":"Ulken",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.3567,-2.575 ]
+    },
+    "properties": {
+    "FIELD1":771,
+    "Project Name":"Tana River nuclear power plant",
+    "Country/Area":"Kenya",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.5598,55.6023 ]
+    },
+    "properties": {
+    "FIELD1":773,
+    "Project Name":"Ignalina nuclear power plant",
+    "Country/Area":"Lithuania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.5762,55.6062 ]
+    },
+    "properties": {
+    "FIELD1":775,
+    "Project Name":"Visaginas nuclear power plant",
+    "Country/Area":"Lithuania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.4064,19.7208 ]
+    },
+    "properties": {
+    "FIELD1":777,
+    "Project Name":"Laguna Verde nuclear power plant",
+    "Country/Area":"Mexico",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.7174,51.4312 ]
+    },
+    "properties": {
+    "FIELD1":781,
+    "Project Name":"Borssele nuclear power plant",
+    "Country/Area":"Netherlands",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.6868,51.8998 ]
+    },
+    "properties": {
+    "FIELD1":784,
+    "Project Name":"Dodewaard nuclear power plant",
+    "Country/Area":"Netherlands",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.6847,7.5649 ]
+    },
+    "properties": {
+    "FIELD1":785,
+    "Project Name":"Geregu nuclear power plant",
+    "Country/Area":"Nigeria",
+    "City":"Geregu",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.9861,5.2016 ]
+    },
+    "properties": {
+    "FIELD1":787,
+    "Project Name":"Itu nuclear power plant",
+    "Country/Area":"Nigeria",
+    "City":"Itu",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.7549,39.7974 ]
+    },
+    "properties": {
+    "FIELD1":789,
+    "Project Name":"Nyongbyon nuclear power plant",
+    "Country/Area":"North Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.7622,39.7886 ]
+    },
+    "properties": {
+    "FIELD1":790,
+    "Project Name":"Nyongbyon nuclear power plant",
+    "Country/Area":"North Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.7551,39.7959 ]
+    },
+    "properties": {
+    "FIELD1":791,
+    "Project Name":"Nyongbyon nuclear power plant",
+    "Country/Area":"North Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 128.3409,40.0947 ]
+    },
+    "properties": {
+    "FIELD1":792,
+    "Project Name":"Sinpo nuclear power plant",
+    "Country/Area":"North Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.5694,39.9277 ]
+    },
+    "properties": {
+    "FIELD1":794,
+    "Project Name":"Taechon nuclear power plant",
+    "Country/Area":"North Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 71.4616,32.392 ]
+    },
+    "properties": {
+    "FIELD1":795,
+    "Project Name":"Chashma nuclear power plant",
+    "Country/Area":"Pakistan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 66.7888,24.845 ]
+    },
+    "properties": {
+    "FIELD1":800,
+    "Project Name":"Karachi nuclear power plant",
+    "Country/Area":"Pakistan",
+    "City":"Karachi",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.92701,9.2647 ]
+    },
+    "properties": {
+    "FIELD1":803,
+    "Project Name":"MH-1A nuclear power plant",
+    "Country/Area":"Panama",
+    "City":"Cristóbal",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.3138,14.6294 ]
+    },
+    "properties": {
+    "FIELD1":804,
+    "Project Name":"Bataan nuclear power plant",
+    "Country/Area":"Philippines",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.1345941,15.1016516 ]
+    },
+    "properties": {
+    "FIELD1":805,
+    "Project Name":"Philippines nuclear power plant",
+    "Country/Area":"Philippines",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.336934,50.3869042 ]
+    },
+    "properties": {
+    "FIELD1":806,
+    "Project Name":"Dąbrowa Górnicza nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Dąbrowa Górnicza",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.0238,50.2649 ]
+    },
+    "properties": {
+    "FIELD1":810,
+    "Project Name":"Katowice nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.2786248,52.3210375 ]
+    },
+    "properties": {
+    "FIELD1":820,
+    "Project Name":"KGHM NuScale VOYGR modular nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.7881,54.8036 ]
+    },
+    "properties": {
+    "FIELD1":826,
+    "Project Name":"Lubiatowo-Kopalino nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Lubiatowo",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20.0365823,50.0656753 ]
+    },
+    "properties": {
+    "FIELD1":829,
+    "Project Name":"Nowa Huta nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Nowa Huta",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.5610332,53.0674009 ]
+    },
+    "properties": {
+    "FIELD1":833,
+    "Project Name":"Ostrołęka nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Ostrołęka",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.6072,51.1465 ]
+    },
+    "properties": {
+    "FIELD1":837,
+    "Project Name":"Pątnów nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Pątnów",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.3339713,50.024621 ]
+    },
+    "properties": {
+    "FIELD1":839,
+    "Project Name":"Stawy Monowskie nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Stawy Monowskie",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.6254433,50.5243466 ]
+    },
+    "properties": {
+    "FIELD1":843,
+    "Project Name":"Tarnobrzeg Special Economic Zone nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Zakładowa",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.0537634,52.6718091 ]
+    },
+    "properties": {
+    "FIELD1":847,
+    "Project Name":"Włocławek nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"Włocławek",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.0868,54.7432 ]
+    },
+    "properties": {
+    "FIELD1":851,
+    "Project Name":"Zarnowiec nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.0892,54.7428 ]
+    },
+    "properties": {
+    "FIELD1":854,
+    "Project Name":"Zarnowiec Original nuclear power plant",
+    "Country/Area":"Poland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -67.2687,18.3652 ]
+    },
+    "properties": {
+    "FIELD1":858,
+    "Project Name":"Boiling Nuclear Superheater (BONUS) nuclear power plant",
+    "Country/Area":"Puerto Rico",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0598,44.3205 ]
+    },
+    "properties": {
+    "FIELD1":859,
+    "Project Name":"Cernavodă nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0586,44.3218 ]
+    },
+    "properties": {
+    "FIELD1":860,
+    "Project Name":"Cernavodă nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0561,44.32401 ]
+    },
+    "properties": {
+    "FIELD1":861,
+    "Project Name":"Cernavodă nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0573,44.3229 ]
+    },
+    "properties": {
+    "FIELD1":862,
+    "Project Name":"Cernavodă nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.0543,44.3249 ]
+    },
+    "properties": {
+    "FIELD1":863,
+    "Project Name":"Cernavodă nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.3672,44.9967 ]
+    },
+    "properties": {
+    "FIELD1":864,
+    "Project Name":"Doicești nuclear power plant",
+    "Country/Area":"Romania",
+    "City":"Doicești",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 170.3011,69.7086 ]
+    },
+    "properties": {
+    "FIELD1":870,
+    "Project Name":"Akademik Lomonosov nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.5912,55.08901 ]
+    },
+    "properties": {
+    "FIELD1":872,
+    "Project Name":"Atomic Power Station 1 Obninsk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Obninsk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 47.9539,52.0928 ]
+    },
+    "properties": {
+    "FIELD1":873,
+    "Project Name":"Balakovo nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 47.9539,52.0928 ]
+    },
+    "properties": {
+    "FIELD1":877,
+    "Project Name":"Balakovo nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Balakovo",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.1636,54.9374 ]
+    },
+    "properties": {
+    "FIELD1":879,
+    "Project Name":"Baltiyskaya nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 53.9889,55.8852 ]
+    },
+    "properties": {
+    "FIELD1":881,
+    "Project Name":"Bashkir nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 61.3225,56.8417 ]
+    },
+    "properties": {
+    "FIELD1":885,
+    "Project Name":"Beloyarsk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 166.5389,68.0503 ]
+    },
+    "properties": {
+    "FIELD1":891,
+    "Project Name":"Bilibino nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 169.4137,69.09954 ]
+    },
+    "properties": {
+    "FIELD1":895,
+    "Project Name":"Cape Nagloynyn floating nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.5011,58.51381 ]
+    },
+    "properties": {
+    "FIELD1":899,
+    "Project Name":"Central/Kostroma nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Buisk",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.4793,54.1866 ]
+    },
+    "properties": {
+    "FIELD1":903,
+    "Project Name":"Dimitrovgrad nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0614,57.905 ]
+    },
+    "properties": {
+    "FIELD1":904,
+    "Project Name":"Kalinin nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.4821,67.4648 ]
+    },
+    "properties": {
+    "FIELD1":908,
+    "Project Name":"Kola nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.6064,51.6764 ]
+    },
+    "properties": {
+    "FIELD1":914,
+    "Project Name":"Kursk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.0486,59.8525 ]
+    },
+    "properties": {
+    "FIELD1":923,
+    "Project Name":"Leningrad nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3443,55.73474 ]
+    },
+    "properties": {
+    "FIELD1":931,
+    "Project Name":"Nizhny Novgorod nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Monakovo",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.2151,51.26677 ]
+    },
+    "properties": {
+    "FIELD1":935,
+    "Project Name":"Novovoronezh nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 132.4955,43.4845 ]
+    },
+    "properties": {
+    "FIELD1":944,
+    "Project Name":"Primorsk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3677,47.6012 ]
+    },
+    "properties": {
+    "FIELD1":948,
+    "Project Name":"Rostov nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 84.9482,56.6583 ]
+    },
+    "properties": {
+    "FIELD1":952,
+    "Project Name":"Seversk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Seversk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 84.9127,56.6463 ]
+    },
+    "properties": {
+    "FIELD1":955,
+    "Project Name":"Siberian nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Seversk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.2358,54.1658 ]
+    },
+    "properties": {
+    "FIELD1":960,
+    "Project Name":"Smolensk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.1967,54.22371 ]
+    },
+    "properties": {
+    "FIELD1":964,
+    "Project Name":"Smolensk nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Pyatidvorka",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 60.9037,55.7517 ]
+    },
+    "properties": {
+    "FIELD1":968,
+    "Project Name":"South Urals nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Ozersk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 51.2901,55.4518 ]
+    },
+    "properties": {
+    "FIELD1":971,
+    "Project Name":"Tatar nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0063,57.87852 ]
+    },
+    "properties": {
+    "FIELD1":975,
+    "Project Name":"Tver nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Udomlya",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.5713,69.99634 ]
+    },
+    "properties": {
+    "FIELD1":979,
+    "Project Name":"Ust-Kuyga nuclear power plant",
+    "Country/Area":"Russia",
+    "City":"Ust'-Kuiga",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 17.6907,48.4968 ]
+    },
+    "properties": {
+    "FIELD1":980,
+    "Project Name":"Bohunice nuclear power plant",
+    "Country/Area":"Slovakia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.4553,48.2572 ]
+    },
+    "properties": {
+    "FIELD1":986,
+    "Project Name":"Mochovce nuclear power plant",
+    "Country/Area":"Slovakia",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.51601,45.9389 ]
+    },
+    "properties": {
+    "FIELD1":990,
+    "Project Name":"Krško nuclear power plant",
+    "Country/Area":"Slovenia",
+    "City":"Krško",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.4402,-33.6866 ]
+    },
+    "properties": {
+    "FIELD1":992,
+    "Project Name":"Duynefontein nuclear power plant",
+    "Country/Area":"South Africa",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.4321,-33.6746 ]
+    },
+    "properties": {
+    "FIELD1":994,
+    "Project Name":"Koeberg nuclear power plant",
+    "Country/Area":"South Africa",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.2546,37.3504 ]
+    },
+    "properties": {
+    "FIELD1":996,
+    "Project Name":"Daejin nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"Samcheok-si",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.4175,35.4105 ]
+    },
+    "properties": {
+    "FIELD1":998,
+    "Project Name":"Hanbit nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"Hongnong-eup",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.38301,37.0931 ]
+    },
+    "properties": {
+    "FIELD1":1004,
+    "Project Name":"Hanul nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.2948,35.3199 ]
+    },
+    "properties": {
+    "FIELD1":1010,
+    "Project Name":"Kori nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"Jangan-eup",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.3017,35.3271 ]
+    },
+    "properties": {
+    "FIELD1":1014,
+    "Project Name":"Saeul nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"Ulsan",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.3881,37.0869 ]
+    },
+    "properties": {
+    "FIELD1":1018,
+    "Project Name":"Shin-Hanul nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.3017,35.3271 ]
+    },
+    "properties": {
+    "FIELD1":1022,
+    "Project Name":"Shin-Kori nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.4786,35.7221 ]
+    },
+    "properties": {
+    "FIELD1":1024,
+    "Project Name":"Shin-Wolsong nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.4743,35.7111 ]
+    },
+    "properties": {
+    "FIELD1":1028,
+    "Project Name":"Wolsong nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 128.9053,36.45411 ]
+    },
+    "properties": {
+    "FIELD1":1032,
+    "Project Name":"Yeongdeok nuclear power plant",
+    "Country/Area":"South Korea",
+    "City":"Andong-si",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.6986,39.807 ]
+    },
+    "properties": {
+    "FIELD1":1034,
+    "Project Name":"Almaraz nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.5694,41.1993 ]
+    },
+    "properties": {
+    "FIELD1":1036,
+    "Project Name":"Ascó nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.0509,39.2134 ]
+    },
+    "properties": {
+    "FIELD1":1038,
+    "Project Name":"Cofrentes nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.8889,40.3478 ]
+    },
+    "properties": {
+    "FIELD1":1039,
+    "Project Name":"Jose Cabrera nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.8726,43.4333 ]
+    },
+    "properties": {
+    "FIELD1":1040,
+    "Project Name":"Lemóniz nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.50301,43.6893 ]
+    },
+    "properties": {
+    "FIELD1":1042,
+    "Project Name":"Regodola nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"Xove",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.20701,42.77501 ]
+    },
+    "properties": {
+    "FIELD1":1043,
+    "Project Name":"Santa Maria De Garona nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"Valle de Tobalina",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.0802,41.48401 ]
+    },
+    "properties": {
+    "FIELD1":1044,
+    "Project Name":"Sayago nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.6227,40.7016 ]
+    },
+    "properties": {
+    "FIELD1":1045,
+    "Project Name":"Trillo nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.1866,39.29601 ]
+    },
+    "properties": {
+    "FIELD1":1047,
+    "Project Name":"Valdecaballeros nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.8662,40.9511 ]
+    },
+    "properties": {
+    "FIELD1":1049,
+    "Project Name":"Vandellos nuclear power plant",
+    "Country/Area":"Spain",
+    "City":"Vandellòs i l'Hospitalet de l'Infant",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.0814,59.2062 ]
+    },
+    "properties": {
+    "FIELD1":1051,
+    "Project Name":"Agesta nuclear power plant",
+    "Country/Area":"Sweden",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.9201,55.7435 ]
+    },
+    "properties": {
+    "FIELD1":1052,
+    "Project Name":"Barseback nuclear power plant",
+    "Country/Area":"Sweden",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.1744,60.4028 ]
+    },
+    "properties": {
+    "FIELD1":1054,
+    "Project Name":"Forsmark nuclear power plant",
+    "Country/Area":"Sweden",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.67301,57.4166 ]
+    },
+    "properties": {
+    "FIELD1":1057,
+    "Project Name":"Oskarshamn nuclear power plant",
+    "Country/Area":"Sweden",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.1087,57.2574 ]
+    },
+    "properties": {
+    "FIELD1":1060,
+    "Project Name":"Ringhals nuclear power plant",
+    "Country/Area":"Sweden",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.2281,47.552 ]
+    },
+    "properties": {
+    "FIELD1":1064,
+    "Project Name":"Beznau nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.96801,47.3656 ]
+    },
+    "properties": {
+    "FIELD1":1067,
+    "Project Name":"Goesgen nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.72501,47.2234 ]
+    },
+    "properties": {
+    "FIELD1":1068,
+    "Project Name":"Graben nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"Graben",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.7296,47.53801 ]
+    },
+    "properties": {
+    "FIELD1":1069,
+    "Project Name":"Kaiseraugst nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"Kaiseraugst",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.1845,47.6012 ]
+    },
+    "properties": {
+    "FIELD1":1070,
+    "Project Name":"Leibstadt nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.8272,46.6927 ]
+    },
+    "properties": {
+    "FIELD1":1071,
+    "Project Name":"Lucens nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.2684,46.9689 ]
+    },
+    "properties": {
+    "FIELD1":1072,
+    "Project Name":"Muehleberg nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.9742,47.3659 ]
+    },
+    "properties": {
+    "FIELD1":1074,
+    "Project Name":"Niederamt nuclear power plant",
+    "Country/Area":"Switzerland",
+    "City":"Däniken",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.5858,25.2821 ]
+    },
+    "properties": {
+    "FIELD1":1075,
+    "Project Name":"Jinshan nuclear power plant",
+    "Country/Area":"Taiwan",
+    "City":"New Taipei",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.6629,25.2025 ]
+    },
+    "properties": {
+    "FIELD1":1077,
+    "Project Name":"Kuosheng nuclear power plant",
+    "Country/Area":"Taiwan",
+    "City":"New Taipei",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.9248185,25.0389434 ]
+    },
+    "properties": {
+    "FIELD1":1079,
+    "Project Name":"Longmen nuclear power plant",
+    "Country/Area":"Taiwan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.7501,21.9589 ]
+    },
+    "properties": {
+    "FIELD1":1081,
+    "Project Name":"Maanshan nuclear power plant",
+    "Country/Area":"Taiwan",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.5402,36.1447 ]
+    },
+    "properties": {
+    "FIELD1":1083,
+    "Project Name":"Akkuyu nuclear power plant",
+    "Country/Area":"Türkiye",
+    "City":"Büyükeceli",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.9877,41.8803 ]
+    },
+    "properties": {
+    "FIELD1":1087,
+    "Project Name":"İğneada nuclear power plant",
+    "Country/Area":"Türkiye",
+    "City":"İğneada",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.0949,42.0141 ]
+    },
+    "properties": {
+    "FIELD1":1091,
+    "Project Name":"Sinop nuclear power plant",
+    "Country/Area":"Türkiye",
+    "City":"Sinop",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1066,51.3893 ]
+    },
+    "properties": {
+    "FIELD1":1095,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1047,51.3894 ]
+    },
+    "properties": {
+    "FIELD1":1096,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1007,51.3894 ]
+    },
+    "properties": {
+    "FIELD1":1097,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.0984,51.3893 ]
+    },
+    "properties": {
+    "FIELD1":1098,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1195,51.3813 ]
+    },
+    "properties": {
+    "FIELD1":1099,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.1195,51.3821 ]
+    },
+    "properties": {
+    "FIELD1":1100,
+    "Project Name":"Chernobyl nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.7863,49.0849 ]
+    },
+    "properties": {
+    "FIELD1":1101,
+    "Project Name":"Chyhyryn nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.8033,45.3915 ]
+    },
+    "properties": {
+    "FIELD1":1105,
+    "Project Name":"Crimean nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"городское поселение Щелкино",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.0673,49.6886 ]
+    },
+    "properties": {
+    "FIELD1":1109,
+    "Project Name":"Kharkiv nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.6473,50.3024 ]
+    },
+    "properties": {
+    "FIELD1":1111,
+    "Project Name":"Khmelnitski nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.3141,46.4599 ]
+    },
+    "properties": {
+    "FIELD1":1117,
+    "Project Name":"Odessa nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.8974,51.3245 ]
+    },
+    "properties": {
+    "FIELD1":1119,
+    "Project Name":"Rivne nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.2201,47.81201 ]
+    },
+    "properties": {
+    "FIELD1":1124,
+    "Project Name":"South Ukraine nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.5851,47.5067 ]
+    },
+    "properties": {
+    "FIELD1":1128,
+    "Project Name":"Zaporizhzhia nuclear power plant",
+    "Country/Area":"Ukraine",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 52.2361,23.9695 ]
+    },
+    "properties": {
+    "FIELD1":1134,
+    "Project Name":"Barakah nuclear power plant",
+    "Country/Area":"United Arab Emirates",
+    "City":"Barakah",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.4938,51.6927 ]
+    },
+    "properties": {
+    "FIELD1":1138,
+    "Project Name":"Berkeley nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.9047,51.7428 ]
+    },
+    "properties": {
+    "FIELD1":1140,
+    "Project Name":"Bradwell B nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.8994,51.7417 ]
+    },
+    "properties": {
+    "FIELD1":1142,
+    "Project Name":"Bradwell nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.4921,54.4184 ]
+    },
+    "properties": {
+    "FIELD1":1144,
+    "Project Name":"Calder Hall nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Borough of Copeland",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.22401,55.0169 ]
+    },
+    "properties": {
+    "FIELD1":1148,
+    "Project Name":"Chapelcross nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.7374,58.5805 ]
+    },
+    "properties": {
+    "FIELD1":1152,
+    "Project Name":"Dounreay nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.96201,50.9139 ]
+    },
+    "properties": {
+    "FIELD1":1154,
+    "Project Name":"Dungeness nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Folkestone and Hythe District",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.9597,50.9138 ]
+    },
+    "properties": {
+    "FIELD1":1156,
+    "Project Name":"Dungeness nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Folkestone and Hythe District",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.1801,54.6341 ]
+    },
+    "properties": {
+    "FIELD1":1158,
+    "Project Name":"Hartlepool nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.9149,54.0295 ]
+    },
+    "properties": {
+    "FIELD1":1160,
+    "Project Name":"Heysham nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Lancaster",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.9112,54.03101 ]
+    },
+    "properties": {
+    "FIELD1":1162,
+    "Project Name":"Heysham nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Lancaster",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.1316,51.207 ]
+    },
+    "properties": {
+    "FIELD1":1164,
+    "Project Name":"Hinkley Point nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Somerset West and Taunton",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.1334,51.2085 ]
+    },
+    "properties": {
+    "FIELD1":1166,
+    "Project Name":"Hinkley Point nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Somerset West and Taunton",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.1423,51.2063 ]
+    },
+    "properties": {
+    "FIELD1":1168,
+    "Project Name":"Hinkley Point nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Somerset West and Taunton",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.8975,55.72001 ]
+    },
+    "properties": {
+    "FIELD1":1170,
+    "Project Name":"Hunterston nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.8913,55.7229 ]
+    },
+    "properties": {
+    "FIELD1":1172,
+    "Project Name":"Hunterston nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5109,54.4296 ]
+    },
+    "properties": {
+    "FIELD1":1174,
+    "Project Name":"Moorside Clean Energy Hub nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.5109,54.4296 ]
+    },
+    "properties": {
+    "FIELD1":1176,
+    "Project Name":"Moorside nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.5708,51.6485 ]
+    },
+    "properties": {
+    "FIELD1":1179,
+    "Project Name":"Oldbury nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.5674,51.65201 ]
+    },
+    "properties": {
+    "FIELD1":1181,
+    "Project Name":"Oldbury nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.4868,54.4224 ]
+    },
+    "properties": {
+    "FIELD1":1184,
+    "Project Name":"Sellafield (Candu) nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.4868,54.4224 ]
+    },
+    "properties": {
+    "FIELD1":1186,
+    "Project Name":"Sellafield (Hitachi) nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.6203,52.2199 ]
+    },
+    "properties": {
+    "FIELD1":1188,
+    "Project Name":"Sizewell C nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"East Suffolk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.6195,52.2123 ]
+    },
+    "properties": {
+    "FIELD1":1190,
+    "Project Name":"Sizewell nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"East Suffolk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.6206,52.2145 ]
+    },
+    "properties": {
+    "FIELD1":1192,
+    "Project Name":"Sizewell nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"East Suffolk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.6203,52.2199 ]
+    },
+    "properties": {
+    "FIELD1":1193,
+    "Project Name":"Sizewell nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"East Suffolk",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.4086,55.9679 ]
+    },
+    "properties": {
+    "FIELD1":1195,
+    "Project Name":"Torness nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.9474,52.9252 ]
+    },
+    "properties": {
+    "FIELD1":1197,
+    "Project Name":"Trawsfynydd nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.4952,54.4245 ]
+    },
+    "properties": {
+    "FIELD1":1199,
+    "Project Name":"Windscale AGR nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"Borough of Copeland",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.2649,50.6825 ]
+    },
+    "properties": {
+    "FIELD1":1200,
+    "Project Name":"Winfrith SGHWR nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.4839,53.4113 ]
+    },
+    "properties": {
+    "FIELD1":1201,
+    "Project Name":"Wylfa Newydd nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.4808,53.4161 ]
+    },
+    "properties": {
+    "FIELD1":1203,
+    "Project Name":"Wylfa nuclear power plant",
+    "Country/Area":"United Kingdom",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.40001,32.75001 ]
+    },
+    "properties": {
+    "FIELD1":1205,
+    "Project Name":"Alan R. Barton nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.1022,29.675 ]
+    },
+    "properties": {
+    "FIELD1":1209,
+    "Project Name":"Allens Creek nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Wallis",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.7729,33.13001 ]
+    },
+    "properties": {
+    "FIELD1":1211,
+    "Project Name":"Alvin W Vogtle nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.7681,33.1429 ]
+    },
+    "properties": {
+    "FIELD1":1213,
+    "Project Name":"Alvin W Vogtle nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.2351,35.311 ]
+    },
+    "properties": {
+    "FIELD1":1215,
+    "Project Name":"Arkansas Nuclear One nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.2483,39.4905 ]
+    },
+    "properties": {
+    "FIELD1":1217,
+    "Project Name":"Atlantic nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.1164,41.6451 ]
+    },
+    "properties": {
+    "FIELD1":1221,
+    "Project Name":"Bailly nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.4336,40.6219 ]
+    },
+    "properties": {
+    "FIELD1":1222,
+    "Project Name":"Beaver Valley nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.15001,41.0833 ]
+    },
+    "properties": {
+    "FIELD1":1224,
+    "Project Name":"Bell Bend nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.50001,42.4667 ]
+    },
+    "properties": {
+    "FIELD1":1225,
+    "Project Name":"Bell nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Town of Ithaca",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.9277,34.7092 ]
+    },
+    "properties": {
+    "FIELD1":1226,
+    "Project Name":"Bellefonte nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.2002,45.3576 ]
+    },
+    "properties": {
+    "FIELD1":1230,
+    "Project Name":"Big Rock Point nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.5499,36.1161 ]
+    },
+    "properties": {
+    "FIELD1":1231,
+    "Project Name":"Black Fox nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.24101,39.0141 ]
+    },
+    "properties": {
+    "FIELD1":1233,
+    "Project Name":"Blue Castle nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.6922,31.1442 ]
+    },
+    "properties": {
+    "FIELD1":1235,
+    "Project Name":"Blue Hills nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.2286,41.2435 ]
+    },
+    "properties": {
+    "FIELD1":1237,
+    "Project Name":"Braidwood nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.1189,34.7042 ]
+    },
+    "properties": {
+    "FIELD1":1239,
+    "Project Name":"Browns Ferry nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.0114,33.9597 ]
+    },
+    "properties": {
+    "FIELD1":1242,
+    "Project Name":"Brunswick nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.2819,42.0742 ]
+    },
+    "properties": {
+    "FIELD1":1244,
+    "Project Name":"Byron nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.7788,38.7589 ]
+    },
+    "properties": {
+    "FIELD1":1246,
+    "Project Name":"Callaway nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.4417,38.4344 ]
+    },
+    "properties": {
+    "FIELD1":1249,
+    "Project Name":"Calvert Cliffs nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.3292,34.2625 ]
+    },
+    "properties": {
+    "FIELD1":1252,
+    "Project Name":"Carolinas-Virginia Tube Reactor nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.1566,42.0944 ]
+    },
+    "properties": {
+    "FIELD1":1253,
+    "Project Name":"Carroll County nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Savanna",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.0694,35.0514 ]
+    },
+    "properties": {
+    "FIELD1":1255,
+    "Project Name":"Catawba nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.0433,43.4919 ]
+    },
+    "properties": {
+    "FIELD1":1257,
+    "Project Name":"CFPP nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Idaho Falls",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5119,35.0367 ]
+    },
+    "properties": {
+    "FIELD1":1263,
+    "Project Name":"Cherokee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.3825,35.89001 ]
+    },
+    "properties": {
+    "FIELD1":1266,
+    "Project Name":"Clinch River Breeder nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Oak Ridge",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.3793,35.88944 ]
+    },
+    "properties": {
+    "FIELD1":1267,
+    "Project Name":"Clinch River SMR nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Oak Ridge",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.8339,40.1719 ]
+    },
+    "properties": {
+    "FIELD1":1268,
+    "Project Name":"Clinton nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.3339,46.4711 ]
+    },
+    "properties": {
+    "FIELD1":1270,
+    "Project Name":"Columbia nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.7855,32.2984 ]
+    },
+    "properties": {
+    "FIELD1":1271,
+    "Project Name":"Comanche Peak nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5003,41.4829 ]
+    },
+    "properties": {
+    "FIELD1":1275,
+    "Project Name":"Connecticut Yankee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6408,40.3628 ]
+    },
+    "properties": {
+    "FIELD1":1276,
+    "Project Name":"Cooper nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.6983,28.9578 ]
+    },
+    "properties": {
+    "FIELD1":1277,
+    "Project Name":"Crystal River nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0861,41.5967 ]
+    },
+    "properties": {
+    "FIELD1":1279,
+    "Project Name":"Davis Besse nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.8555,35.2115 ]
+    },
+    "properties": {
+    "FIELD1":1282,
+    "Project Name":"Diablo Canyon nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.5652,41.9756 ]
+    },
+    "properties": {
+    "FIELD1":1284,
+    "Project Name":"Donald C Cook nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.25001,38.45001 ]
+    },
+    "properties": {
+    "FIELD1":1286,
+    "Project Name":"Douglas Point (PEPCO) nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.2701,41.3901 ]
+    },
+    "properties": {
+    "FIELD1":1288,
+    "Project Name":"Dresden nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.7781,42.1011 ]
+    },
+    "properties": {
+    "FIELD1":1291,
+    "Project Name":"Duane Arnold nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.3447,31.9342 ]
+    },
+    "properties": {
+    "FIELD1":1292,
+    "Project Name":"Edwin I Hatch nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.5555,45.2963 ]
+    },
+    "properties": {
+    "FIELD1":1294,
+    "Project Name":"Elk River nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Elk River",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.4833,41.35001 ]
+    },
+    "properties": {
+    "FIELD1":1295,
+    "Project Name":"Erie nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.9891,41.71944 ]
+    },
+    "properties": {
+    "FIELD1":1297,
+    "Project Name":"Experimental Boiling Water Reactor nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.0087,43.51151 ]
+    },
+    "properties": {
+    "FIELD1":1298,
+    "Project Name":"Experimental Breeder Reactor nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.0087,43.59509 ]
+    },
+    "properties": {
+    "FIELD1":1299,
+    "Project Name":"Experimental Breeder Reactor nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.2577,41.96031 ]
+    },
+    "properties": {
+    "FIELD1":1300,
+    "Project Name":"Fermi nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.2575,41.96278 ]
+    },
+    "properties": {
+    "FIELD1":1301,
+    "Project Name":"Fermi nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.2648,41.96082 ]
+    },
+    "properties": {
+    "FIELD1":1302,
+    "Project Name":"Fermi nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.2166,39.8169 ]
+    },
+    "properties": {
+    "FIELD1":1304,
+    "Project Name":"Forked River nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.0775,41.5182 ]
+    },
+    "properties": {
+    "FIELD1":1305,
+    "Project Name":"Fort Calhoun nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.8742,40.2453 ]
+    },
+    "properties": {
+    "FIELD1":1307,
+    "Project Name":"Fort St. Vrain nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.2334,39.7675 ]
+    },
+    "properties": {
+    "FIELD1":1308,
+    "Project Name":"Fulton nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Fulton Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.0478,32.0081 ]
+    },
+    "properties": {
+    "FIELD1":1310,
+    "Project Name":"Grand Gulf nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9114,42.1499 ]
+    },
+    "properties": {
+    "FIELD1":1313,
+    "Project Name":"Greene County nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.6979,43.1062 ]
+    },
+    "properties": {
+    "FIELD1":1314,
+    "Project Name":"Greenwood nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.7745,28.5033 ]
+    },
+    "properties": {
+    "FIELD1":1316,
+    "Project Name":"Gulf Coast SMR nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.1589,34.4017 ]
+    },
+    "properties": {
+    "FIELD1":1320,
+    "Project Name":"H. B. Robinson nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.7848,40.55901 ]
+    },
+    "properties": {
+    "FIELD1":1321,
+    "Project Name":"Hallam nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.0887,36.3544 ]
+    },
+    "properties": {
+    "FIELD1":1322,
+    "Project Name":"Hartsville nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.7349,43.8509 ]
+    },
+    "properties": {
+    "FIELD1":1326,
+    "Project Name":"Haven nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.5377,39.4666 ]
+    },
+    "properties": {
+    "FIELD1":1328,
+    "Project Name":"Hope Creek nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Lower Alloways Creek Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -124.2091,40.7407 ]
+    },
+    "properties": {
+    "FIELD1":1330,
+    "Project Name":"Humboldt Bay nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.8132,44.0025 ]
+    },
+    "properties": {
+    "FIELD1":1331,
+    "Project Name":"Idaho (AEHI) nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9527,41.2706 ]
+    },
+    "properties": {
+    "FIELD1":1332,
+    "Project Name":"Indian Point nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.3955,43.5223 ]
+    },
+    "properties": {
+    "FIELD1":1335,
+    "Project Name":"James A Fitzpatrick nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.6032,40.9911 ]
+    },
+    "properties": {
+    "FIELD1":1336,
+    "Project Name":"Jamesport nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.1116,31.2231 ]
+    },
+    "properties": {
+    "FIELD1":1338,
+    "Project Name":"Joseph M Farley nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.5357,44.3426 ]
+    },
+    "properties": {
+    "FIELD1":1340,
+    "Project Name":"Kewaunee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.2316,43.5601 ]
+    },
+    "properties": {
+    "FIELD1":1341,
+    "Project Name":"Lacrosse nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.6691,41.2455 ]
+    },
+    "properties": {
+    "FIELD1":1342,
+    "Project Name":"LaSalle nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.6217,29.0733 ]
+    },
+    "properties": {
+    "FIELD1":1344,
+    "Project Name":"Levy County nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.5874,40.2243 ]
+    },
+    "properties": {
+    "FIELD1":1346,
+    "Project Name":"Limerick nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Limerick Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.6953,43.9511 ]
+    },
+    "properties": {
+    "FIELD1":1348,
+    "Project Name":"Maine Yankee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.7347,34.0346 ]
+    },
+    "properties": {
+    "FIELD1":1349,
+    "Project Name":"Malibu nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.4457,38.6005 ]
+    },
+    "properties": {
+    "FIELD1":1350,
+    "Project Name":"Marble Hill nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.9486,35.4331 ]
+    },
+    "properties": {
+    "FIELD1":1352,
+    "Project Name":"McGuire nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.2244,43.5854 ]
+    },
+    "properties": {
+    "FIELD1":1354,
+    "Project Name":"Midland nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.1677,41.3107 ]
+    },
+    "properties": {
+    "FIELD1":1356,
+    "Project Name":"Millstone nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5268,42.57301 ]
+    },
+    "properties": {
+    "FIELD1":1359,
+    "Project Name":"Montague nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.8493,45.3338 ]
+    },
+    "properties": {
+    "FIELD1":1361,
+    "Project Name":"Monticello nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.5374,41.7924 ]
+    },
+    "properties": {
+    "FIELD1":1362,
+    "Project Name":"Natrium nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Kemmerer",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.6547,41.3742 ]
+    },
+    "properties": {
+    "FIELD1":1363,
+    "Project Name":"New England nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.4068,43.5205 ]
+    },
+    "properties": {
+    "FIELD1":1365,
+    "Project Name":"Nine Mile Point nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.7897,38.0601 ]
+    },
+    "properties": {
+    "FIELD1":1368,
+    "Project Name":"North Anna nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.5966,18.4872 ]
+    },
+    "properties": {
+    "FIELD1":1373,
+    "Project Name":"North Coast nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Isolte",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.8986,34.7939 ]
+    },
+    "properties": {
+    "FIELD1":1374,
+    "Project Name":"Oconee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.2058,39.8144 ]
+    },
+    "properties": {
+    "FIELD1":1377,
+    "Project Name":"Oyster Creek nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.3146,42.323 ]
+    },
+    "properties": {
+    "FIELD1":1378,
+    "Project Name":"Palisades nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.8617,33.3881 ]
+    },
+    "properties": {
+    "FIELD1":1382,
+    "Project Name":"Palo Verde nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.6375,43.6036 ]
+    },
+    "properties": {
+    "FIELD1":1387,
+    "Project Name":"Pathfinder nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.2687,39.7589 ]
+    },
+    "properties": {
+    "FIELD1":1388,
+    "Project Name":"Peach Bottom nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Peach Bottom Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.1333,45.70001 ]
+    },
+    "properties": {
+    "FIELD1":1391,
+    "Project Name":"Pebble Springs nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.4511,35.8406 ]
+    },
+    "properties": {
+    "FIELD1":1393,
+    "Project Name":"Perkins nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.1439,41.8006 ]
+    },
+    "properties": {
+    "FIELD1":1396,
+    "Project Name":"Perry nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.2194,39.4413 ]
+    },
+    "properties": {
+    "FIELD1":1398,
+    "Project Name":"Perryman nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.8045,36.4632 ]
+    },
+    "properties": {
+    "FIELD1":1400,
+    "Project Name":"Phipps Bend nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0008,39.0124 ]
+    },
+    "properties": {
+    "FIELD1":1402,
+    "Project Name":"Piketon nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5771,41.9436 ]
+    },
+    "properties": {
+    "FIELD1":1403,
+    "Project Name":"Pilgrim nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.2348,40.1319 ]
+    },
+    "properties": {
+    "FIELD1":1406,
+    "Project Name":"Piqua nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.5369,44.2806 ]
+    },
+    "properties": {
+    "FIELD1":1407,
+    "Project Name":"Point Beach nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -92.6333,44.622 ]
+    },
+    "properties": {
+    "FIELD1":1409,
+    "Project Name":"Prairie Island nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.3103,41.7261 ]
+    },
+    "properties": {
+    "FIELD1":1411,
+    "Project Name":"Quad Cities nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.66801,43.5948 ]
+    },
+    "properties": {
+    "FIELD1":1413,
+    "Project Name":"Quanicassee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1206,38.3445 ]
+    },
+    "properties": {
+    "FIELD1":1415,
+    "Project Name":"Rancho Seco nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9457,40.7595 ]
+    },
+    "properties": {
+    "FIELD1":1416,
+    "Project Name":"Ravenswood nuclear power plant",
+    "Country/Area":"United States",
+    "City":"New York",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.3287,46.4569 ]
+    },
+    "properties": {
+    "FIELD1":1418,
+    "Project Name":"Richland SMR nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.3327,30.757 ]
+    },
+    "properties": {
+    "FIELD1":1429,
+    "Project Name":"River Bend nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.3099,43.2777 ]
+    },
+    "properties": {
+    "FIELD1":1432,
+    "Project Name":"Robert Emmett Ginna nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.5358,39.4625 ]
+    },
+    "properties": {
+    "FIELD1":1433,
+    "Project Name":"Salem nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Lower Alloways Creek Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.5548,33.3689 ]
+    },
+    "properties": {
+    "FIELD1":1436,
+    "Project Name":"San Onofre nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.5553,33.3692 ]
+    },
+    "properties": {
+    "FIELD1":1437,
+    "Project Name":"San Onofre nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.5543,33.3686 ]
+    },
+    "properties": {
+    "FIELD1":1438,
+    "Project Name":"San Onofre nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.4692,46.95901 ]
+    },
+    "properties": {
+    "FIELD1":1439,
+    "Project Name":"Satsop nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.2417,40.22601 ]
+    },
+    "properties": {
+    "FIELD1":1441,
+    "Project Name":"Saxton nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Liberty Township",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8489,42.8992 ]
+    },
+    "properties": {
+    "FIELD1":1442,
+    "Project Name":"Seabrook nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.8781,44.44301 ]
+    },
+    "properties": {
+    "FIELD1":1444,
+    "Project Name":"Sears Isle nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.0917,35.2267 ]
+    },
+    "properties": {
+    "FIELD1":1445,
+    "Project Name":"Sequoyah nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.9556,35.6334 ]
+    },
+    "properties": {
+    "FIELD1":1447,
+    "Project Name":"Shearon Harris nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.4353,40.6211 ]
+    },
+    "properties": {
+    "FIELD1":1453,
+    "Project Name":"Shippingport nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.8657,40.96001 ]
+    },
+    "properties": {
+    "FIELD1":1454,
+    "Project Name":"Shoreham nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.1118,48.5328 ]
+    },
+    "properties": {
+    "FIELD1":1455,
+    "Project Name":"Skagit-Hanford nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.1466,38.67653 ]
+    },
+    "properties": {
+    "FIELD1":1457,
+    "Project Name":"SM-1 nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -145.7178,63.97376 ]
+    },
+    "properties": {
+    "FIELD1":1458,
+    "Project Name":"SM-1A nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Delta Junction",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.6039,43.3579 ]
+    },
+    "properties": {
+    "FIELD1":1459,
+    "Project Name":"Somerset nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.3317,25.3924 ]
+    },
+    "properties": {
+    "FIELD1":1461,
+    "Project Name":"South Dade nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.5972,34.9587 ]
+    },
+    "properties": {
+    "FIELD1":1463,
+    "Project Name":"South River nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.0481,28.79501 ]
+    },
+    "properties": {
+    "FIELD1":1466,
+    "Project Name":"South Texas nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0007,39.0128 ]
+    },
+    "properties": {
+    "FIELD1":1470,
+    "Project Name":"Southern Ohio Diversification Initiative nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.2464,27.3486 ]
+    },
+    "properties": {
+    "FIELD1":1472,
+    "Project Name":"St. Lucie nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.9664,29.6725 ]
+    },
+    "properties": {
+    "FIELD1":1474,
+    "Project Name":"St. Rosalie nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.0826,37.5371 ]
+    },
+    "properties": {
+    "FIELD1":1476,
+    "Project Name":"Stanislaus nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.6649,43.3619 ]
+    },
+    "properties": {
+    "FIELD1":1478,
+    "Project Name":"Sterling nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.70801,39.5212 ]
+    },
+    "properties": {
+    "FIELD1":1479,
+    "Project Name":"Summit nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.7829,33.4498 ]
+    },
+    "properties": {
+    "FIELD1":1481,
+    "Project Name":"Sundesert nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.6852,37.1667 ]
+    },
+    "properties": {
+    "FIELD1":1483,
+    "Project Name":"Surry Green Energy Center nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.6986,37.1661 ]
+    },
+    "properties": {
+    "FIELD1":1489,
+    "Project Name":"Surry nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.1462,41.0919 ]
+    },
+    "properties": {
+    "FIELD1":1493,
+    "Project Name":"Susquehanna nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.7248,40.1539 ]
+    },
+    "properties": {
+    "FIELD1":1495,
+    "Project Name":"Three Mile Island nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.8843,46.0392 ]
+    },
+    "properties": {
+    "FIELD1":1497,
+    "Project Name":"Trojan nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.3324,25.43448 ]
+    },
+    "properties": {
+    "FIELD1":1498,
+    "Project Name":"Turkey Point nuclear power station",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.85201,44.7055 ]
+    },
+    "properties": {
+    "FIELD1":1502,
+    "Project Name":"Tyrone nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.8368,37.61101 ]
+    },
+    "properties": {
+    "FIELD1":1504,
+    "Project Name":"Vallecitos nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.2814,41.55501 ]
+    },
+    "properties": {
+    "FIELD1":1505,
+    "Project Name":"Vandalia nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.51301,42.77901 ]
+    },
+    "properties": {
+    "FIELD1":1506,
+    "Project Name":"Vermont Yankee nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.9574,41.2617 ]
+    },
+    "properties": {
+    "FIELD1":1507,
+    "Project Name":"Verplanck nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.0306,28.6144 ]
+    },
+    "properties": {
+    "FIELD1":1509,
+    "Project Name":"Victoria County nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.5095,34.1181 ]
+    },
+    "properties": {
+    "FIELD1":1511,
+    "Project Name":"Vidal nuclear power plant",
+    "Country/Area":"United States",
+    "City":"Vidal",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.3153,34.2983 ]
+    },
+    "properties": {
+    "FIELD1":1513,
+    "Project Name":"Virgil C Summer nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.3152,46.4668 ]
+    },
+    "properties": {
+    "FIELD1":1516,
+    "Project Name":"Washington Nuclear Project nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.31801,46.4749 ]
+    },
+    "properties": {
+    "FIELD1":1517,
+    "Project Name":"Washington Nuclear Project nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.4716,29.9953 ]
+    },
+    "properties": {
+    "FIELD1":1518,
+    "Project Name":"Waterford nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.7895,35.6021 ]
+    },
+    "properties": {
+    "FIELD1":1519,
+    "Project Name":"Watts Bar nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.7909,35.6015 ]
+    },
+    "properties": {
+    "FIELD1":1520,
+    "Project Name":"Watts Bar nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.5108,35.0366 ]
+    },
+    "properties": {
+    "FIELD1":1521,
+    "Project Name":"William States Lee III nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.6898,38.2393 ]
+    },
+    "properties": {
+    "FIELD1":1523,
+    "Project Name":"Wolf Creek nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.9271,42.7269 ]
+    },
+    "properties": {
+    "FIELD1":1524,
+    "Project Name":"Yankee Rowe nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.21201,34.9606 ]
+    },
+    "properties": {
+    "FIELD1":1525,
+    "Project Name":"Yellow Creek nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.2281,38.8664 ]
+    },
+    "properties": {
+    "FIELD1":1527,
+    "Project Name":"Zimmer nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.8028,42.4461 ]
+    },
+    "properties": {
+    "FIELD1":1529,
+    "Project Name":"Zion nuclear power plant",
+    "Country/Area":"United States",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 67.4255,40.51701 ]
+    },
+    "properties": {
+    "FIELD1":1531,
+    "Project Name":"Navoi nuclear power plant",
+    "Country/Area":"Uzbekistan",
+    "City":"",
+    "Location Accuracy":"approximate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.9743,11.4109 ]
+    },
+    "properties": {
+    "FIELD1":1533,
+    "Project Name":"Ninh Thuận 1 nuclear power plant",
+    "Country/Area":"Vietnam",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 109.1751,11.6903 ]
+    },
+    "properties": {
+    "FIELD1":1537,
+    "Project Name":"Ninh Thuận 2 nuclear power plant",
+    "Country/Area":"Vietnam",
+    "City":"",
+    "Location Accuracy":"exact"
+    }
+  }
+]
+}

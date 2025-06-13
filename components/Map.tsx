@@ -227,7 +227,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Map.module.css';
 import type { FeatureCollection, Point, Feature } from 'geojson';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlane, faMap, faFire } from '@fortawesome/free-solid-svg-icons';
+import { faPlane, faMap, faFire, faRadiation } from '@fortawesome/free-solid-svg-icons';
 
 console.log('Mapbox token:', process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
@@ -256,6 +256,8 @@ type MapProps = {
 
 const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const [showAirportsState, setShowAirports] = useState(showAirports);
+    // Nuclear sites toggle state
+    const [showNuclear, setShowNuclear] = useState(false);
     const [mapStyle, setMapStyle] = useState('mapbox://styles/mapbox/dark-v10');
     const mapRef = useRef<HTMLDivElement>(null);
     const [sightings, setSightings] = useState<Sighting[]>([]);
@@ -564,6 +566,56 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         }
     }, [showHeatmapState]);
 
+    // Show/hide nuclear sites layer
+    useEffect(() => {
+        const map = mapInstanceRef.current;
+        if (!map) return;
+
+        const updateNuclearSites = async () => {
+            const response = await fetch('/data/nuclear-sites.geojson');
+            const data = await response.json();
+
+            if (!map.getSource('nuclear-sites')) {
+                map.addSource('nuclear-sites', {
+                    type: 'geojson',
+                    data,
+                });
+
+                map.addLayer({
+                    id: 'nuclear-points',
+                    type: 'circle',
+                    source: 'nuclear-sites',
+                    paint: {
+                        'circle-radius': 5,
+                        'circle-color': '#ffcc00',
+                        'circle-stroke-width': 1,
+                        'circle-stroke-color': '#222'
+                    },
+                    layout: {
+                        visibility: showNuclear ? 'visible' : 'none'
+                    }
+                });
+            } else {
+                map.setLayoutProperty(
+                    'nuclear-points',
+                    'visibility',
+                    showNuclear ? 'visible' : 'none'
+                );
+            }
+        };
+
+        // Guard for map style readiness before updating nuclear sites
+        if (!map.isStyleLoaded()) {
+            const waitForStyle = () => {
+                updateNuclearSites();
+                map.off('styledata', waitForStyle);
+            };
+            map.on('styledata', waitForStyle);
+            return;
+        }
+        updateNuclearSites();
+    }, [showNuclear]);
+
     return (
         <>
             <div
@@ -819,6 +871,79 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                                 height: '18px',
                                 width: '18px',
                                 left: showHeatmapState ? '23px' : '3px',
+                                bottom: '3px',
+                                backgroundColor: '#fff',
+                                transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
+                                borderRadius: '50%',
+                                boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+                            }}
+                        />
+                    </label>
+                </div>
+            </div>
+            {/* Nuclear Sites Toggle */}
+            <div
+                style={{
+                    position: 'absolute',
+                    top: '260px',
+                    left: '12px',
+                    zIndex: 1000,
+                    background: 'rgba(0,0,0,0.75)',
+                    padding: '10px 12px',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    minWidth: '48px',
+                    height: '48px',
+                    width: '120px',
+                }}
+            >
+                <FontAwesomeIcon icon={faRadiation} style={{ fontSize: '26px', color: '#fff', marginRight: '8px' }} />
+                <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                    <label
+                        style={{
+                            position: 'relative',
+                            display: 'inline-block',
+                            width: '44px',
+                            height: '24px',
+                            verticalAlign: 'middle',
+                            cursor: 'pointer',
+                            userSelect: 'none',
+                        }}
+                    >
+                        <input
+                            type="checkbox"
+                            id="nuclearToggle"
+                            checked={showNuclear}
+                            onChange={() => setShowNuclear(prev => !prev)}
+                            style={{
+                                opacity: 0,
+                                width: 0,
+                                height: 0,
+                            }}
+                        />
+                        <span
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                backgroundColor: showNuclear ? '#00ffc3' : '#ccc',
+                                boxShadow: showNuclear
+                                    ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
+                                    : '0 1px 4px rgba(0,0,0,0.15)',
+                                transition: 'background-color 0.3s',
+                                borderRadius: '24px',
+                            }}
+                        />
+                        <span
+                            style={{
+                                position: 'absolute',
+                                height: '18px',
+                                width: '18px',
+                                left: showNuclear ? '23px' : '3px',
                                 bottom: '3px',
                                 backgroundColor: '#fff',
                                 transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',

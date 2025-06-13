@@ -5,7 +5,7 @@
 
 // Extracted function to initialize sightings source and layers
 import type { LngLatLike } from 'mapbox-gl';
-function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
+function initializeMapLayers(map: mapboxgl.Map) {
     // Set globe fog for space-like background
     map.setFog({
         color: 'black',
@@ -13,71 +13,23 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
         'space-color': '#0b0b0b',
         'star-intensity': 0.45
     });
-    // Add clustered GeoJSON source
+    // Add sightings GeoJSON source (no clustering)
     if (!map.getSource('sightings')) {
         map.addSource('sightings', {
             type: 'geojson',
             data: {
                 type: 'FeatureCollection',
                 features: []
-            },
-            cluster: true,
-            clusterMaxZoom: 14,
-            clusterRadius: 50
-        });
-    }
-
-    // Cluster circles
-    if (!map.getLayer('clusters')) {
-        map.addLayer({
-            id: 'clusters',
-            type: 'circle',
-            source: 'sightings',
-            filter: ['has', 'point_count'],
-            paint: {
-                'circle-color': [
-                    'step',
-                    ['get', 'point_count'],
-                    '#00ffc3',
-                    10, '#00bfae',
-                    50, '#00796b'
-                ],
-                'circle-radius': [
-                    'step',
-                    ['get', 'point_count'],
-                    16,
-                    10, 22,
-                    50, 28
-                ]
             }
         });
     }
 
-    // Cluster count labels
-    if (!map.getLayer('cluster-count')) {
-        map.addLayer({
-            id: 'cluster-count',
-            type: 'symbol',
-            source: 'sightings',
-            filter: ['has', 'point_count'],
-            layout: {
-                'text-field': '{point_count_abbreviated}',
-                'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-                'text-size': 14
-            },
-            paint: {
-                'text-color': '#222'
-            }
-        });
-    }
-
-    // Unclustered points
+    // Unclustered points (no clustering, no cluster filters)
     if (!map.getLayer('unclustered-point')) {
         map.addLayer({
             id: 'unclustered-point',
             type: 'circle',
             source: 'sightings',
-            filter: ['!', ['has', 'point_count']],
             paint: {
                 'circle-color': '#00ffc3',
                 'circle-radius': 6,
@@ -87,7 +39,7 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
         });
     }
 
-    // Add heatmap layer after unclustered-point layer
+    // Add heatmap layer (no cluster logic, use all points)
     if (!map.getLayer('sightings-heat')) {
         map.addLayer({
             id: 'sightings-heat',
@@ -95,9 +47,7 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
             source: 'sightings',
             maxzoom: 15,
             layout: {
-                visibility: map.getLayer('sightings-heat')
-                    ? map.getLayoutProperty('sightings-heat', 'visibility')
-                    : 'visible',
+                visibility: 'visible',
             },
             paint: {
                 'heatmap-weight': [
@@ -135,13 +85,9 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
                 'heatmap-opacity': 0.6
             }
         });
-    }
-    // After layers are added, set heatmap visibility
-    if (map.getLayer('sightings-heat')) {
-        map.setLayoutProperty('sightings-heat', 'visibility', showHeatmap ? 'visible' : 'none');
+        map.moveLayer('sightings-heat');
     }
 
-    // Popup on unclustered point click
     map.on('click', 'unclustered-point', (e) => {
         const feature = e.features && e.features[0];
         if (!feature || !feature.geometry || !(typeof feature.geometry === 'object' && feature.geometry !== null && feature.geometry.type === 'Point')) return;
@@ -155,6 +101,8 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
             noise: string;
             count: number;
             imageUrl: string;
+            isHistorical?: string;
+            historicalName?: string;
         };
 
         const formattedDate = new Date(props.date).toLocaleString('en-US', {
@@ -165,59 +113,45 @@ function initializeMapLayers(map: mapboxgl.Map, showHeatmap: boolean) {
             minute: 'numeric',
             hour12: true,
         });
-        const popupHTML = `
-  <div style="max-width: 300px; font-family: sans-serif; background: #fff; color: #000; padding: 12px; border-radius: 8px; line-height: 1.4;">
-    <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">${props.city}</div>
-    <div><strong>Date:</strong> ${formattedDate}</div>
-    <div><strong>Shape:</strong> ${props.shape}</div>
-    <div><strong>Noise:</strong> ${props.noise}</div>
-    <div><strong>Count:</strong> ${props.count}</div>
-    <div style="margin-top: 8px;"><strong>Description:</strong><br>${props.description}</div>
-    ${
-            props.imageUrl
-                ? `<img src="${props.imageUrl}" alt="Sighting image" style="margin-top: 10px; width: 100%; border-radius: 4px;" />`
-                : ''
-        }
-  </div>
-`;
+        const popupHTML = props.isHistorical === 'true'
+            ? `
+              <div style="max-width: 300px; font-family: Georgia, serif; background: #000; color: #fff; padding: 14px; border: 2px solid #444; border-radius: 10px; box-shadow: 0 0 12px rgba(255,255,255,0.2);">
+                <div style="font-size: 18px; font-weight: bold; color: #990000;">Historical Sighting</div>
+                <div style="font-size: 16px; font-style: italic; margin-top: 6px;">${props.historicalName}</div>
+                <div><strong>Date:</strong> ${formattedDate}</div>
+                <div><strong>City:</strong> ${props.city}</div>
+                <div><strong>Shape:</strong> ${props.shape}</div>
+                <div><strong>Noise:</strong> ${props.noise}</div>
+                <div><strong>Count:</strong> ${props.count}</div>
+                <div style="margin-top: 8px;"><strong>Description:</strong><br>${props.description}</div>
+              </div>
+            `
+            : `
+              <div style="max-width: 300px; font-family: sans-serif; background: #fff; color: #000; padding: 12px; border-radius: 8px; line-height: 1.4;">
+                <div style="font-size: 16px; font-weight: bold; margin-bottom: 6px;">${props.city}</div>
+                <div><strong>Date:</strong> ${formattedDate}</div>
+                <div><strong>Shape:</strong> ${props.shape}</div>
+                <div><strong>Noise:</strong> ${props.noise}</div>
+                <div><strong>Count:</strong> ${props.count}</div>
+                <div style="margin-top: 8px;"><strong>Description:</strong><br>${props.description}</div>
+                ${
+                  props.imageUrl
+                      ? `<img src="${props.imageUrl}" alt="Sighting image" style="margin-top: 10px; width: 100%; border-radius: 4px;" />`
+                      : ''
+                }
+              </div>
+            `;
         new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates as LngLatLike)
             .setHTML(popupHTML)
             .addTo(map);
     });
 
-    // Change cursor to pointer on hover
     map.on('mouseenter', 'unclustered-point', () => {
         map.getCanvas().style.cursor = 'pointer';
     });
     map.on('mouseleave', 'unclustered-point', () => {
         map.getCanvas().style.cursor = '';
-    });
-
-    // Zoom to cluster on cluster click
-    map.on('click', 'clusters', (e) => {
-        const features = map.queryRenderedFeatures(e.point, {
-            layers: ['clusters']
-        });
-        if (!features.length) return;
-
-        const clusterIdRaw = features[0]?.properties?.cluster_id;
-        const clusterId = Number(clusterIdRaw);
-        if (!Number.isFinite(clusterId)) return;
-
-        (map.getSource('sightings') as mapboxgl.GeoJSONSource).getClusterExpansionZoom(
-            clusterId,
-            (err, zoom) => {
-                if (err) return;
-                if (!features[0].geometry || !(typeof features[0].geometry === 'object' && features[0].geometry !== null && features[0].geometry.type === 'Point')) return;
-                if (typeof zoom !== 'number' || !Number.isFinite(zoom)) return;
-
-                map.easeTo({
-                    center: features[0].geometry.coordinates as [number, number],
-                    zoom
-                });
-            }
-        );
     });
 }
 
@@ -250,11 +184,10 @@ type MapProps = {
     shape: string;
     dateRange: string;
     showAirports: boolean;
-    showHeatmap: boolean;
 };
 
 
-const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
+const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
     const [showAirportsState, setShowAirports] = useState(showAirports);
     // Nuclear sites toggle state
     const [showNuclear, setShowNuclear] = useState(false);
@@ -266,8 +199,6 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     const initialZoomRef = useRef<number>(4);
     // Store the map instance for later access in effects
     const mapInstanceRef = useRef<mapboxgl.Map | null>(null);
-    // Show/hide heatmap toggle state
-    const [showHeatmapState, setShowHeatmap] = useState(showHeatmap);
 
     useEffect((): void => {
         fetch('/api/sightings')
@@ -381,7 +312,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         );
 
         map.on('load', () => {
-            initializeMapLayers(map, showHeatmapState);
+            initializeMapLayers(map);
         });
 
         return () => {
@@ -430,7 +361,9 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                 date: sighting.date,
                 noise: sighting.noise,
                 count: sighting.count,
-                imageUrl: sighting.imageUrl
+                imageUrl: sighting.imageUrl,
+                isHistorical: (sighting as any).isHistorical,
+                historicalName: (sighting as any).historicalName,
               }
             };
           })
@@ -557,14 +490,6 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
         };
     }, [showAirportsState]);
 
-    // Show/hide sightings heatmap layer
-    useEffect(() => {
-        const map = mapInstanceRef.current;
-        if (!map) return;
-        if (map.getLayer('sightings-heat')) {
-            map.setLayoutProperty('sightings-heat', 'visibility', showHeatmapState ? 'visible' : 'none');
-        }
-    }, [showHeatmapState]);
 
     // Show/hide nuclear sites layer
     useEffect(() => {
@@ -764,8 +689,8 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                                     map.setStyle(newStyle);
                                     setMapStyle(newStyle);
                                     map.once('styledata', () => {
-                                        // Re-initialize map layers and pass current showHeatmapState
-                                        initializeMapLayers(map, showHeatmapState);
+                                        // Re-initialize map layers
+                                        initializeMapLayers(map);
                                         // Restore sightings data after style change
                                         const source = map.getSource('sightings');
                                         if (source) {
@@ -835,84 +760,11 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                     </label>
                 </div>
             </div>
-            {/* Heatmap Toggle */}
-            <div
-                style={{
-                    position: 'absolute',
-                    top: '200px',
-                    left: '12px',
-                    zIndex: 1000,
-                    background: 'rgba(0,0,0,0.75)',
-                    padding: '10px 12px',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px',
-                    minWidth: '48px',
-                    height: '48px',
-                    width: '120px',
-                }}
-            >
-                <FontAwesomeIcon icon={faFire} style={{ fontSize: '26px', color: '#fff', marginRight: '8px' }} />
-                <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                    <label
-                        style={{
-                            position: 'relative',
-                            display: 'inline-block',
-                            width: '44px',
-                            height: '24px',
-                            verticalAlign: 'middle',
-                            cursor: 'pointer',
-                            userSelect: 'none',
-                        }}
-                    >
-                        <input
-                            type="checkbox"
-                            id="heatmapToggle"
-                            checked={showHeatmapState}
-                            onChange={() => setShowHeatmap((prev) => !prev)}
-                            style={{
-                                opacity: 0,
-                                width: 0,
-                                height: 0,
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                backgroundColor: showHeatmapState ? '#00ffc3' : '#ccc',
-                                boxShadow: showHeatmapState
-                                    ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
-                                    : '0 1px 4px rgba(0,0,0,0.15)',
-                                transition: 'background-color 0.3s',
-                                borderRadius: '24px',
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                height: '18px',
-                                width: '18px',
-                                left: showHeatmapState ? '23px' : '3px',
-                                bottom: '3px',
-                                backgroundColor: '#fff',
-                                transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
-                                borderRadius: '50%',
-                                boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-                            }}
-                        />
-                    </label>
-                </div>
-            </div>
             {/* Nuclear Sites Toggle */}
             <div
                 style={{
                     position: 'absolute',
-                    top: '260px',
+                    top: '200px',
                     left: '12px',
                     zIndex: 1000,
                     background: 'rgba(0,0,0,0.75)',

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import Map from '../components/Map';
+
 import SightingForm from '../components/SightingForm';
 import LoadingScreen from '../components/LoadingScreen';
 import styles from '../styles/Home.module.css';
@@ -11,10 +11,8 @@ import DateRangeSliderPanel from '../components/DateRangeSliderPanel';
 export default function Home() {
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
-    const [shape, setShape] = useState('all');
     const [dateRange, setDateRange] = useState('all');
     const [totalSightings, setTotalSightings] = useState<number | null>(null);
-    const [showAirports, setShowAirports] = useState(false);
 
 
     useEffect(() => {
@@ -30,10 +28,6 @@ export default function Home() {
         return () => clearTimeout(timer);
     }, []);
 
-    useEffect(() => {
-        console.log('Current shape:', shape);
-        console.log('Current dateRange:', dateRange);
-    }, [shape, dateRange]);
 
     if (loading) return <LoadingScreen />;
 
@@ -59,11 +53,6 @@ export default function Home() {
 
             {showForm && <SightingForm onClose={() => setShowForm(false)} />}
 
-            <Map
-                shape={shape}
-                dateRange={dateRange}
-                showAirports={showAirports}
-            />
 
             <DateRangeSliderPanel
                 dateRange={dateRange}

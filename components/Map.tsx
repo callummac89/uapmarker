@@ -161,7 +161,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import styles from './Map.module.css';
 import type { FeatureCollection, Point, Feature } from 'geojson';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlane, faMap, faFire, faRadiation } from '@fortawesome/free-solid-svg-icons';
+import { faPlane, faMap, faRadiation } from '@fortawesome/free-solid-svg-icons';
 
 console.log('Mapbox token:', process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
@@ -184,10 +184,11 @@ type MapProps = {
     shape: string;
     dateRange: string;
     showAirports: boolean;
+    showHeatmap: boolean; // <-- Add this line
 };
 
 
-const UapMap = ({ shape, dateRange, showAirports }: MapProps) => {
+const UapMap = ({ shape, dateRange, showAirports}: MapProps) => {
     const [showAirportsState, setShowAirports] = useState(showAirports);
     // Nuclear sites toggle state
     const [showNuclear, setShowNuclear] = useState(false);

@@ -595,6 +595,33 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
                         visibility: showNuclear ? 'visible' : 'none'
                     }
                 });
+
+                // Add popup and pointer interactivity for nuclear-points
+                map.on('click', 'nuclear-points', (e) => {
+                    const feature = e.features && e.features[0];
+                    if (!feature || !feature.geometry || !(typeof feature.geometry === 'object' && feature.geometry !== null && feature.geometry.type === 'Point')) return;
+
+                    const coordinates = feature.geometry.coordinates.slice();
+                    const name = feature.properties?.name || 'Nuclear Site';
+
+                    const popupHTML = `
+                        <div style="max-width: 260px; font-family: sans-serif; background: #fff; color: #000; padding: 10px; border-radius: 6px;">
+                            <strong>${name}</strong>
+                        </div>
+                    `;
+
+                    new mapboxgl.Popup()
+                        .setLngLat(coordinates as LngLatLike)
+                        .setHTML(popupHTML)
+                        .addTo(map);
+                });
+                // Change cursor to pointer on hover
+                map.on('mouseenter', 'nuclear-points', () => {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                map.on('mouseleave', 'nuclear-points', () => {
+                    map.getCanvas().style.cursor = '';
+                });
             } else {
                 map.setLayoutProperty(
                     'nuclear-points',

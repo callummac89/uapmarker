@@ -8,17 +8,18 @@ datasource db {
 }
 
 model Sighting {
-  id          String   @id @default(cuid())
-  date        DateTime
-  city        String
-  latitude    Float
-  longitude   Float
-  noise       String // e.g. Silent, Loud, Humming
-  shape       Shape
-  count       Int // # of UAP
-  description String
-  imageUrl    String? // Optional image
-  createdAt   DateTime @default(now())
+  id             String   @id @default(cuid())
+  latitude       Float
+  longitude      Float
+  description    String
+  city           String
+  shape          String
+  date           DateTime
+  noise          String
+  count          Int
+  imageUrl       String?
+  historical     Boolean  @default(false)
+  historicalName String? // e.g. "Roswell Incident"
 }
 
 enum Shape {

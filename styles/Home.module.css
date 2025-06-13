@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 
-.container :global(html, body) {
+
+:global(html),
+:global(body) {
   font-family: 'Poppins', sans-serif;
 }
 

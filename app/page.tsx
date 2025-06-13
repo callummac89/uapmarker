@@ -2,11 +2,14 @@
 
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 
 import SightingForm from '../components/SightingForm';
 import LoadingScreen from '../components/LoadingScreen';
 import styles from '../styles/Home.module.css';
 import DateRangeSliderPanel from '../components/DateRangeSliderPanel';
+
+const Map = dynamic(() => import('../components/Map'), { ssr: false });
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -58,6 +61,8 @@ export default function Home() {
                 dateRange={dateRange}
                 setDateRange={setDateRange}
             />
+
+            <Map dateRange={dateRange} />
 
         </div>
     );

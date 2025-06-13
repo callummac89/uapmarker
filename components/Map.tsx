@@ -1,5 +1,3 @@
-
-
 // Always keep 'use client' at the very top for Next.js
 'use client'
 
@@ -187,14 +185,14 @@ type ExtendedSighting = Sighting & {
 };
 
 type MapProps = {
-    shape: string;
-    dateRange: string;
-    showAirports: boolean;
-    showHeatmap: boolean; // <-- Add this line
+    shape?: string;
+    dateRange?: string;
+    showAirports?: boolean;
+    showHeatmap?: boolean; // <-- Add this line
 };
 
 
-const UapMap = ({ shape, dateRange, showAirports}: MapProps) => {
+const UapMap = ({ shape = 'all', dateRange = 'all', showAirports = false }: MapProps) => {
     const [showAirportsState, setShowAirports] = useState(showAirports);
     // Nuclear sites toggle state
     const [showNuclear, setShowNuclear] = useState(false);
@@ -319,6 +317,7 @@ const UapMap = ({ shape, dateRange, showAirports}: MapProps) => {
         );
 
         map.on('load', () => {
+            map.resize();
             initializeMapLayers(map);
         });
 

@@ -267,7 +267,7 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
     // Show/hide heatmap toggle state
     const [showHeatmapState, setShowHeatmap] = useState(showHeatmap);
 
-    useEffect(() => {
+    useEffect((): void => {
         fetch('/api/sightings')
             .then(res => res.json())
             .then(data => {
@@ -396,54 +396,67 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
 
     // Update sightings data source when filteredSightings change
     useEffect(() => {
-        const map = mapInstanceRef.current;
-        if (!map || !map.isStyleLoaded()) {
-            console.warn('Map not ready to receive sightings data');
-            return;
-        }
+      const map = mapInstanceRef.current;
+      if (!map) return;
 
+      const updateSightings = () => {
         const source = map.getSource('sightings');
         if (!source) {
-            console.warn('Sightings source not yet available');
-            return;
+          console.warn('Sightings source not yet available');
+          return;
         }
 
         const jitterIndexMap = new Map<string, number>();
         const geojsonSightings: FeatureCollection<Point> = {
-            type: 'FeatureCollection',
-            features: filteredSightings.map(sighting => {
-                const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
-                const currentIndex = jitterIndexMap.get(key) ?? 0;
-                jitterIndexMap.set(key, currentIndex + 1);
-                const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
-                return {
-                    type: 'Feature',
-                    geometry: {
-                        type: 'Point',
-                        coordinates: [longitude, latitude]
-                    },
-                    properties: {
-                        id: sighting.id,
-                        description: sighting.description,
-                        city: sighting.city,
-                        shape: sighting.shape,
-                        date: sighting.date,
-                        noise: sighting.noise,
-                        count: sighting.count,
-                        imageUrl: sighting.imageUrl
-                    }
-                };
-            })
+          type: 'FeatureCollection',
+          features: filteredSightings.map(sighting => {
+            const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
+            const currentIndex = jitterIndexMap.get(key) ?? 0;
+            jitterIndexMap.set(key, currentIndex + 1);
+            const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
+            return {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [longitude, latitude]
+              },
+              properties: {
+                id: sighting.id,
+                description: sighting.description,
+                city: sighting.city,
+                shape: sighting.shape,
+                date: sighting.date,
+                noise: sighting.noise,
+                count: sighting.count,
+                imageUrl: sighting.imageUrl
+              }
+            };
+          })
         };
 
         (source as mapboxgl.GeoJSONSource).setData(geojsonSightings);
+        console.log('✅ Sightings source updated successfully');
+      };
+
+      if (map.isStyleLoaded()) {
+        updateSightings();
+      } else {
+        const handleStyle = () => {
+          updateSightings();
+          map.off('styledata', handleStyle);
+        };
+        map.on('styledata', handleStyle);
+        return () => {
+          map.off('styledata', handleStyle);
+        };
+      }
     }, [filteredSightings]);
 
     // Show/hide airports on toggle
     useEffect(() => {
         const map = mapInstanceRef.current;
         if (!map) return;
-        let removeMoveend: (() => void) | undefined;
+        let removeMoveend: (() => void) | null = null;
         // const removed = false;
         // Airports update logic, only when showAirportsState changes
         const updateAirports = async () => {
@@ -536,7 +549,9 @@ const UapMap = ({ shape, dateRange, showAirports, showHeatmap }: MapProps) => {
             if (map.getSource('airports')) map.removeSource('airports');
         }
         return () => {
-            if (removeMoveend) removeMoveend();
+            if (removeMoveend) {
+                removeMoveend();
+            }
         };
     }, [showAirportsState]);
 

@@ -180,6 +180,12 @@ type Sighting = {
     imageUrl: string;
 };
 
+// ExtendedSighting type for historical fields
+type ExtendedSighting = Sighting & {
+    isHistorical?: string;
+    historicalName?: string;
+};
+
 type MapProps = {
     shape: string;
     dateRange: string;
@@ -348,6 +354,7 @@ const UapMap = ({ shape, dateRange, showAirports}: MapProps) => {
             const currentIndex = jitterIndexMap.get(key) ?? 0;
             jitterIndexMap.set(key, currentIndex + 1);
             const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
+            const s = sighting as ExtendedSighting;
             return {
               type: 'Feature',
               geometry: {
@@ -355,16 +362,16 @@ const UapMap = ({ shape, dateRange, showAirports}: MapProps) => {
                 coordinates: [longitude, latitude]
               },
               properties: {
-                id: sighting.id,
-                description: sighting.description,
-                city: sighting.city,
-                shape: sighting.shape,
-                date: sighting.date,
-                noise: sighting.noise,
-                count: sighting.count,
-                imageUrl: sighting.imageUrl,
-                isHistorical: (sighting as any).isHistorical,
-                historicalName: (sighting as any).historicalName,
+                id: s.id,
+                description: s.description,
+                city: s.city,
+                shape: s.shape,
+                date: s.date,
+                noise: s.noise,
+                count: s.count,
+                imageUrl: s.imageUrl,
+                isHistorical: s.isHistorical,
+                historicalName: s.historicalName,
               }
             };
           })

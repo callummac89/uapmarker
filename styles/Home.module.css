@@ -38,7 +38,7 @@
     left: 0;
     right: 0;
     height: 60px;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.37);
     color: white;
     display: flex;
     align-items: center;
@@ -46,6 +46,7 @@
     padding: 0 1rem;
     z-index: 10;
     backdrop-filter: blur(4px);
+    --drop-shadow: 0 2px 8px rgba(0, 2, 2, 0.3);
 }
 
 .logo {
@@ -119,6 +120,11 @@
     font-size: 0.9rem;
 }
 
+/* Add spacing between adjacent .filter elements */
+.filter + .filter {
+    margin-left: 12px;
+}
+
 .toggleWrapper {
     display: flex;
     align-items: center;
@@ -177,4 +183,61 @@
         align-items: center;
         gap: 1rem;
     }
+}
+
+.footerGroupToggle {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footerGroupButton {
+    background: #111;
+    color: #fff;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footerGroupButton:hover {
+    background: #222;
+    color: #00ffc3;
+}
+
+.footerControls {
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* increased gap for spacing */
+  margin-bottom: 10px;
+}
+
+.controlButton {
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.controlButton:hover {
+  background-color: #333;
+}
+
+.controlButtonActive {
+  background-color: #00ffc3;
+  color: #000;
+  border-color: #00ffc3;
 }

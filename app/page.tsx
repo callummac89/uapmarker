@@ -6,6 +6,7 @@ import Map from '../components/Map';
 import SightingForm from '../components/SightingForm';
 import LoadingScreen from '../components/LoadingScreen';
 import styles from '../styles/Home.module.css';
+import DateRangeSliderPanel from '../components/DateRangeSliderPanel';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -66,48 +67,11 @@ export default function Home() {
                 showHeatmap={showHeatmap}
             />
 
-            <footer className={styles.footer}>
-                <div className={styles.footerRow}>
-                    <select value={shape} onChange={(e) => setShape(e.target.value)} className={styles.filter}>
-                        <option value="all">All Shapes</option>
-                        <option value="Light">Light</option>
-                        <option value="Sphere">Sphere</option>
-                        <option value="Triangle">Triangle</option>
-                        <option value="Orb">Orb</option>
-                        <option value="Cigar">Cigar</option>
-                        <option value="Other">Other</option>
-                    </select>
+            <DateRangeSliderPanel
+                dateRange={dateRange}
+                setDateRange={setDateRange}
+            />
 
-                    <select value={dateRange} onChange={(e) => setDateRange(e.target.value)} className={styles.filter}>
-                        <option value="all">All Dates</option>
-                        <option value="24h">Last 24 Hours</option>
-                        <option value="7d">Last 7 Days</option>
-                        <option value="30d">Last 30 Days</option>
-                        <option value="365d">Last Year</option>
-                    </select>
-                </div>
-
-                <div className={styles.footerToggles}>
-                    <div className={styles.toggleWrapper}>
-                        <span className={styles.toggleText}>Show Airports</span>
-                        <div
-                            className={`${styles.toggle} ${showAirports ? styles.active : ''}`}
-                            onClick={() => setShowAirports(!showAirports)}
-                        >
-                            <div className={styles.toggleThumb} />
-                        </div>
-                    </div>
-                    <div className={styles.toggleWrapper}>
-                        <span className={styles.toggleText}>Show Heatmap</span>
-                        <div
-                            className={`${styles.toggle} ${showHeatmap ? styles.active : ''}`}
-                            onClick={() => setShowHeatmap(!showHeatmap)}
-                        >
-                            <div className={styles.toggleThumb} />
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }

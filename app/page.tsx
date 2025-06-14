@@ -54,14 +54,8 @@ export default function Home() {
                 setDateRange={setDateRange}
             />
 
-            <Map dateRange={dateRange} />
+            <Map dateRange={dateRange} showForm={showForm} />
 
-            {/* Conditionally render the footer (toggle buttons) only when the form is not shown */}
-            {!showForm && (
-              <footer className={styles.footer}>
-                {/* toggle buttons */}
-              </footer>
-            )}
         </div>
     );
 }

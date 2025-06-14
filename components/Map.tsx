@@ -188,11 +188,17 @@ type MapProps = {
     shape?: string;
     dateRange?: string;
     showAirports?: boolean;
-    showHeatmap?: boolean; // <-- Add this line
+    showHeatmap?: boolean;
+    showForm?: boolean; // new prop
 };
 
 
-const UapMap = ({ shape = 'all', dateRange = 'all', showAirports = false }: MapProps) => {
+const UapMap = ({
+    shape = 'all',
+    dateRange = 'all',
+    showAirports = false,
+    showForm = false,
+}: MapProps) => {
     const [showAirportsState, setShowAirports] = useState(showAirports);
     // Nuclear sites toggle state
     const [showNuclear, setShowNuclear] = useState(false);
@@ -577,269 +583,273 @@ const UapMap = ({ shape = 'all', dateRange = 'all', showAirports = false }: MapP
 
     return (
         <>
-            <div
-                style={{
-                    position: 'absolute',
-                    top: '80px',
-                    left: '12px',
-                    zIndex: 1000,
-                    background: 'rgba(0,0,0,0.75)',
-                    padding: '10px 12px',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px',
-                    minWidth: '48px',
-                    height: '48px',
-                    width: '120px',
-                }}
-            >
-                <FontAwesomeIcon icon={faPlane} style={{ fontSize: '30px', color: '#fff', marginRight: '8px' }} />
-                <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                    <label
+            {!showForm && (
+                <>
+                    <div
                         style={{
-                            position: 'relative',
-                            display: 'inline-block',
-                            width: '44px',
-                            height: '24px',
-                            verticalAlign: 'middle',
-                            cursor: 'pointer',
-                            userSelect: 'none',
+                            position: 'absolute',
+                            top: '80px',
+                            left: '12px',
+                            zIndex: 1000,
+                            background: 'rgba(0,0,0,0.75)',
+                            padding: '10px 12px',
+                            borderRadius: '12px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '12px',
+                            minWidth: '48px',
+                            height: '48px',
+                            width: '120px',
                         }}
                     >
-                        <input
-                            type="checkbox"
-                            id="airportToggle"
-                            checked={showAirportsState}
-                            onChange={() => setShowAirports(!showAirportsState)}
-                            style={{
-                                opacity: 0,
-                                width: 0,
-                                height: 0,
-                            }}
-                        />
-                        {/* Track */}
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                backgroundColor: showAirportsState ? '#00ffc3' : '#ccc',
-                                transition: 'background-color 0.3s',
-                                borderRadius: '24px',
-                                boxShadow: showAirportsState
-                                    ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
-                                    : '0 1px 4px rgba(0,0,0,0.15)',
-                            }}
-                        />
-                        {/* Thumb */}
-                        <span
-                            style={{
-                                position: 'absolute',
-                                height: '18px',
-                                width: '18px',
-                                left: showAirportsState ? '23px' : '3px',
-                                bottom: '3px',
-                                backgroundColor: '#fff',
-                                transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
-                                borderRadius: '50%',
-                                boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-                            }}
-                        />
-                    </label>
-                </div>
-            </div>
-            {/* Terrain Toggle */}
-            <div
-                style={{
-                    position: 'absolute',
-                    top: '140px',
-                    left: '12px',
-                    zIndex: 1000,
-                    background: 'rgba(0,0,0,0.75)',
-                    padding: '10px 12px',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px',
-                    minWidth: '48px',
-                    height: '48px',
-                    width: '120px',
-                }}
-            >
-                <FontAwesomeIcon icon={faMap} style={{ fontSize: '30px', color: '#fff', marginRight: '8px' }} />
-                <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                    <label
+                        <FontAwesomeIcon icon={faPlane} style={{ fontSize: '30px', color: '#fff', marginRight: '8px' }} />
+                        <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                            <label
+                                style={{
+                                    position: 'relative',
+                                    display: 'inline-block',
+                                    width: '44px',
+                                    height: '24px',
+                                    verticalAlign: 'middle',
+                                    cursor: 'pointer',
+                                    userSelect: 'none',
+                                }}
+                            >
+                                <input
+                                    type="checkbox"
+                                    id="airportToggle"
+                                    checked={showAirportsState}
+                                    onChange={() => setShowAirports(!showAirportsState)}
+                                    style={{
+                                        opacity: 0,
+                                        width: 0,
+                                        height: 0,
+                                    }}
+                                />
+                                {/* Track */}
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        backgroundColor: showAirportsState ? '#00ffc3' : '#ccc',
+                                        transition: 'background-color 0.3s',
+                                        borderRadius: '24px',
+                                        boxShadow: showAirportsState
+                                            ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
+                                            : '0 1px 4px rgba(0,0,0,0.15)',
+                                    }}
+                                />
+                                {/* Thumb */}
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        height: '18px',
+                                        width: '18px',
+                                        left: showAirportsState ? '23px' : '3px',
+                                        bottom: '3px',
+                                        backgroundColor: '#fff',
+                                        transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
+                                        borderRadius: '50%',
+                                        boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+                                    }}
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    {/* Terrain Toggle */}
+                    <div
                         style={{
-                            position: 'relative',
-                            display: 'inline-block',
-                            width: '44px',
-                            height: '24px',
-                            verticalAlign: 'middle',
-                            cursor: 'pointer',
-                            userSelect: 'none',
+                            position: 'absolute',
+                            top: '140px',
+                            left: '12px',
+                            zIndex: 1000,
+                            background: 'rgba(0,0,0,0.75)',
+                            padding: '10px 12px',
+                            borderRadius: '12px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '12px',
+                            minWidth: '48px',
+                            height: '48px',
+                            width: '120px',
                         }}
                     >
-                        <input
-                            type="checkbox"
-                            id="terrainToggle"
-                            checked={mapStyle === 'mapbox://styles/mapbox/satellite-v9'}
-                            onChange={() => {
-                                const map = mapInstanceRef.current;
-                                if (map) {
-                                    const newStyle =
-                                        map.getStyle()?.sprite?.includes('dark')
-                                            ? 'mapbox://styles/mapbox/satellite-v9'
-                                            : 'mapbox://styles/mapbox/dark-v10';
-                                    map.setStyle(newStyle);
-                                    setMapStyle(newStyle);
-                                    map.once('styledata', () => {
-                                        // Re-initialize map layers
-                                        initializeMapLayers(map);
-                                        // Restore sightings data after style change
-                                        const source = map.getSource('sightings');
-                                        if (source) {
-                                            const jitterIndexMap = new Map<string, number>();
-                                            const geojsonSightings: FeatureCollection<Point> = {
-                                                type: 'FeatureCollection',
-                                                features: filteredSightings.map(sighting => {
-                                                    const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
-                                                    const currentIndex = jitterIndexMap.get(key) ?? 0;
-                                                    jitterIndexMap.set(key, currentIndex + 1);
-                                                    const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
-                                                    return {
-                                                        type: 'Feature',
-                                                        geometry: { type: 'Point', coordinates: [longitude, latitude] },
-                                                        properties: {
-                                                            id: sighting.id,
-                                                            description: sighting.description,
-                                                            city: sighting.city,
-                                                            shape: sighting.shape,
-                                                            date: sighting.date,
-                                                            noise: sighting.noise,
-                                                            count: sighting.count,
-                                                            imageUrl: sighting.imageUrl
-                                                        }
+                        <FontAwesomeIcon icon={faMap} style={{ fontSize: '30px', color: '#fff', marginRight: '8px' }} />
+                        <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                            <label
+                                style={{
+                                    position: 'relative',
+                                    display: 'inline-block',
+                                    width: '44px',
+                                    height: '24px',
+                                    verticalAlign: 'middle',
+                                    cursor: 'pointer',
+                                    userSelect: 'none',
+                                }}
+                            >
+                                <input
+                                    type="checkbox"
+                                    id="terrainToggle"
+                                    checked={mapStyle === 'mapbox://styles/mapbox/satellite-v9'}
+                                    onChange={() => {
+                                        const map = mapInstanceRef.current;
+                                        if (map) {
+                                            const newStyle =
+                                                map.getStyle()?.sprite?.includes('dark')
+                                                    ? 'mapbox://styles/mapbox/satellite-v9'
+                                                    : 'mapbox://styles/mapbox/dark-v10';
+                                            map.setStyle(newStyle);
+                                            setMapStyle(newStyle);
+                                            map.once('styledata', () => {
+                                                // Re-initialize map layers
+                                                initializeMapLayers(map);
+                                                // Restore sightings data after style change
+                                                const source = map.getSource('sightings');
+                                                if (source) {
+                                                    const jitterIndexMap = new Map<string, number>();
+                                                    const geojsonSightings: FeatureCollection<Point> = {
+                                                        type: 'FeatureCollection',
+                                                        features: filteredSightings.map(sighting => {
+                                                            const key = `${sighting.latitude.toFixed(6)}_${sighting.longitude.toFixed(6)}`;
+                                                            const currentIndex = jitterIndexMap.get(key) ?? 0;
+                                                            jitterIndexMap.set(key, currentIndex + 1);
+                                                            const { latitude, longitude } = getJitteredCoord(sighting.latitude, sighting.longitude, currentIndex);
+                                                            return {
+                                                                type: 'Feature',
+                                                                geometry: { type: 'Point', coordinates: [longitude, latitude] },
+                                                                properties: {
+                                                                    id: sighting.id,
+                                                                    description: sighting.description,
+                                                                    city: sighting.city,
+                                                                    shape: sighting.shape,
+                                                                    date: sighting.date,
+                                                                    noise: sighting.noise,
+                                                                    count: sighting.count,
+                                                                    imageUrl: sighting.imageUrl
+                                                                }
+                                                            };
+                                                        })
                                                     };
-                                                })
-                                            };
-                                            (source as mapboxgl.GeoJSONSource).setData(geojsonSightings);
+                                                    (source as mapboxgl.GeoJSONSource).setData(geojsonSightings);
+                                                }
+                                            });
                                         }
-                                    });
-                                }
-                            }}
-                            style={{
-                                opacity: 0,
-                                width: 0,
-                                height: 0,
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                backgroundColor: mapStyle === 'mapbox://styles/mapbox/satellite-v9' ? '#00ffc3' : '#ccc',
-                                boxShadow: mapStyle === 'mapbox://styles/mapbox/satellite-v9'
-                                    ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
-                                    : '0 1px 4px rgba(0,0,0,0.15)',
-                                transition: 'background-color 0.3s',
-                                borderRadius: '24px',
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                height: '18px',
-                                width: '18px',
-                                left: mapStyle === 'mapbox://styles/mapbox/satellite-v9' ? '23px' : '3px',
-                                bottom: '3px',
-                                backgroundColor: '#fff',
-                                transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
-                                borderRadius: '50%',
-                                boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-                            }}
-                        />
-                    </label>
-                </div>
-            </div>
-            {/* Nuclear Sites Toggle */}
-            <div
-                style={{
-                    position: 'absolute',
-                    top: '200px',
-                    left: '12px',
-                    zIndex: 1000,
-                    background: 'rgba(0,0,0,0.75)',
-                    padding: '10px 12px',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '12px',
-                    minWidth: '48px',
-                    height: '48px',
-                    width: '120px',
-                }}
-            >
-                <FontAwesomeIcon icon={faRadiation} style={{ fontSize: '26px', color: '#fff', marginRight: '8px' }} />
-                <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
-                    <label
+                                    }}
+                                    style={{
+                                        opacity: 0,
+                                        width: 0,
+                                        height: 0,
+                                    }}
+                                />
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        backgroundColor: mapStyle === 'mapbox://styles/mapbox/satellite-v9' ? '#00ffc3' : '#ccc',
+                                        boxShadow: mapStyle === 'mapbox://styles/mapbox/satellite-v9'
+                                            ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
+                                            : '0 1px 4px rgba(0,0,0,0.15)',
+                                        transition: 'background-color 0.3s',
+                                        borderRadius: '24px',
+                                    }}
+                                />
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        height: '18px',
+                                        width: '18px',
+                                        left: mapStyle === 'mapbox://styles/mapbox/satellite-v9' ? '23px' : '3px',
+                                        bottom: '3px',
+                                        backgroundColor: '#fff',
+                                        transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
+                                        borderRadius: '50%',
+                                        boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+                                    }}
+                                />
+                            </label>
+                        </div>
+                    </div>
+                    {/* Nuclear Sites Toggle */}
+                    <div
                         style={{
-                            position: 'relative',
-                            display: 'inline-block',
-                            width: '44px',
-                            height: '24px',
-                            verticalAlign: 'middle',
-                            cursor: 'pointer',
-                            userSelect: 'none',
+                            position: 'absolute',
+                            top: '200px',
+                            left: '12px',
+                            zIndex: 1000,
+                            background: 'rgba(0,0,0,0.75)',
+                            padding: '10px 12px',
+                            borderRadius: '12px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '12px',
+                            minWidth: '48px',
+                            height: '48px',
+                            width: '120px',
                         }}
                     >
-                        <input
-                            type="checkbox"
-                            id="nuclearToggle"
-                            checked={showNuclear}
-                            onChange={() => setShowNuclear(prev => !prev)}
-                            style={{
-                                opacity: 0,
-                                width: 0,
-                                height: 0,
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                bottom: 0,
-                                backgroundColor: showNuclear ? '#00ffc3' : '#ccc',
-                                boxShadow: showNuclear
-                                    ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
-                                    : '0 1px 4px rgba(0,0,0,0.15)',
-                                transition: 'background-color 0.3s',
-                                borderRadius: '24px',
-                            }}
-                        />
-                        <span
-                            style={{
-                                position: 'absolute',
-                                height: '18px',
-                                width: '18px',
-                                left: showNuclear ? '23px' : '3px',
-                                bottom: '3px',
-                                backgroundColor: '#fff',
-                                transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
-                                borderRadius: '50%',
-                                boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
-                            }}
-                        />
-                    </label>
-                </div>
-            </div>
+                        <FontAwesomeIcon icon={faRadiation} style={{ fontSize: '26px', color: '#fff', marginRight: '8px' }} />
+                        <div style={{ flexGrow: 1, display: 'flex', justifyContent: 'flex-end' }}>
+                            <label
+                                style={{
+                                    position: 'relative',
+                                    display: 'inline-block',
+                                    width: '44px',
+                                    height: '24px',
+                                    verticalAlign: 'middle',
+                                    cursor: 'pointer',
+                                    userSelect: 'none',
+                                }}
+                            >
+                                <input
+                                    type="checkbox"
+                                    id="nuclearToggle"
+                                    checked={showNuclear}
+                                    onChange={() => setShowNuclear(prev => !prev)}
+                                    style={{
+                                        opacity: 0,
+                                        width: 0,
+                                        height: 0,
+                                    }}
+                                />
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        right: 0,
+                                        bottom: 0,
+                                        backgroundColor: showNuclear ? '#00ffc3' : '#ccc',
+                                        boxShadow: showNuclear
+                                            ? '0 0 2px #4fd1c5, 0 2px 8px rgba(79,209,197,0.15)'
+                                            : '0 1px 4px rgba(0,0,0,0.15)',
+                                        transition: 'background-color 0.3s',
+                                        borderRadius: '24px',
+                                    }}
+                                />
+                                <span
+                                    style={{
+                                        position: 'absolute',
+                                        height: '18px',
+                                        width: '18px',
+                                        left: showNuclear ? '23px' : '3px',
+                                        bottom: '3px',
+                                        backgroundColor: '#fff',
+                                        transition: 'left 0.3s cubic-bezier(.4,2.2,.2,1), background-color 0.3s',
+                                        borderRadius: '50%',
+                                        boxShadow: '0 2px 6px rgba(0,0,0,0.12)',
+                                    }}
+                                />
+                            </label>
+                        </div>
+                    </div>
+                </>
+            )}
             <div ref={mapRef} className={styles.mapContainer} />
         </>
     );

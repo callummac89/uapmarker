@@ -1,21 +1,22 @@
 {
   "name": "UAP Marker",
-  "short_name": "UAP Marker",
-  "description": "Track and visualize UAP sightings globally",
+  "short_name": "UAPMarker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00ffc3",
+  "orientation": "portrait",
+  "description": "Track and explore UAP sightings globally.",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/icons/icon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#000000"
+  ]
 }

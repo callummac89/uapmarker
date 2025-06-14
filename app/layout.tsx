@@ -28,9 +28,9 @@ export default function RootLayout({
       <head>
         <title>UAP Marker – Track and report unexplained aerial sightings</title>
         <link rel="icon" href="/ufo-icon.png" type="image/png" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/icon-192.png" />
-        <meta name="theme-color" content="#000000" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+          <meta name="theme-color" content="#00ffc3" />
       </head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-07T6BE7J3E"

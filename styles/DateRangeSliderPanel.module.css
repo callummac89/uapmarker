@@ -11,11 +11,10 @@
     gap: 8px;
 }
 
-/* Adjust position higher on mobile to avoid cutoff */
 @media (max-width: 600px) {
     .sliderPanel {
-        bottom: auto;
-        top: 80px;
+        bottom: 25px;
+        top: auto;
     }
 }
 

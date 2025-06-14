@@ -20,6 +20,7 @@
     max-height: 90vh;
     overflow-y: auto;
     margin: 0 1rem;
+    z-index: 1001;
 }
 
 .closeBtn {

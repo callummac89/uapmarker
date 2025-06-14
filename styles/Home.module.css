@@ -134,6 +134,8 @@
 .toggleText {
     font-size: 14px;
     color: #fff;
+    z-index: 2;
+    position: relative;
 }
 
 .toggle {

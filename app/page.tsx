@@ -15,17 +15,12 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
     const [dateRange, setDateRange] = useState('all');
-    const [totalSightings, setTotalSightings] = useState<number | null>(null);
-
 
     useEffect(() => {
         const timer = setTimeout(() => setLoading(false), 1500);
 
         fetch('/api/sightings')
             .then(res => res.json())
-            .then(data => {
-                setTotalSightings(data.length);
-            })
             .catch(err => console.error('Failed to fetch sightings count', err));
 
         return () => clearTimeout(timer);
@@ -44,9 +39,6 @@ export default function Home() {
                 <h1 className={styles.logo}>
                     <img src="/logo.png" alt="UAP Marker Logo" style={{ height: '20px', marginRight: '10px', verticalAlign: 'middle' }} />
                 </h1>
-                {totalSightings !== null && (
-                    <span className={styles.count}>{totalSightings} Sightings</span>
-                )}
                 <nav>
                     <button className={styles.navButton} onClick={() => setShowForm(!showForm)}>
                         {showForm ? 'Close' : '+ Add Sighting'}
